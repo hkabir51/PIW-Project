@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Procurement\",\"Inventory\",\"Warehouse\"]"
+        "value": "[\"Procurement\",\"Inventory\",\"Warehouse\",\"_Measure\"]"
       },
       {
         "name": "PBI_ProTooling",
@@ -716,6 +716,56 @@
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"WareHouse ID\", type text}, {\"COGS ($)\", Int64.Type}, {\"Beginning Inventory ($)\", Int64.Type}, {\"Ending Inventory ($)\", Int64.Type}, {\"Total Correct Orders\", Int64.Type}, {\"Total Orders\", Int64.Type}, {\"Used Storage Space (sq ft)\", Int64.Type}, {\"Total Storage Space (sq ft)\", Int64.Type}, {\"Daily Storage Utilization (%)\", type number}, {\"Number of Days\", Int64.Type}, {\"Number of Correct Picks\", Int64.Type}, {\"Total Number of Picks\", Int64.Type}, {\"Number of Backordered Items\", Int64.Type}, {\"Total Number of Ordered Items\", Int64.Type}, {\"\", type text}, {\"_1\", type text}}),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"\", \"_1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Measure",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "fd8ab426-1ba4-4188-b188-2bbff5ce4d6c",
+        "measures": [
+          {
+            "name": "Actual_cost",
+            "displayFolder": "Procurement",
+            "expression": "SUM(Procurement[Actual Cost ($)])",
+            "formatString": "0",
+            "lineageTag": "75a61099-3cac-4380-adbf-667b18e46e2b"
+          },
+          {
+            "name": "Total_correct_orders",
+            "displayFolder": "Wirehouse",
+            "expression": "SUM(Warehouse[Total Correct Orders])",
+            "formatString": "0",
+            "lineageTag": "7951ada3-749c-479c-b276-528aa449c8f6"
+          },
+          {
+            "name": "Total_COGS",
+            "displayFolder": "Inventory",
+            "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
+            "formatString": "0",
+            "lineageTag": "e6fa9544-a2c1-420c-953f-b5c153f2fbf9"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Measure",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
                 "in",
                 "    #\"Removed Columns\""
               ],
