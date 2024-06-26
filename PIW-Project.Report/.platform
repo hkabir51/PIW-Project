@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PIW-Project"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "65c1b050-ca29-41a9-a355-bfc736d92f20"
+  }
+}

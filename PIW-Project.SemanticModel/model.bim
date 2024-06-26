@@ -1,0 +1,729 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.130.930.0 (24.06)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Procurement\",\"Inventory\",\"Warehouse\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Procurement",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Supplier ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4b8d3953-4855-4165-aa31-15d99cf2b649",
+            "sourceColumn": "Supplier ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cost Savings ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8bdc1f15-2281-4c3f-977a-1b6fa0fe9022",
+            "sourceColumn": "Cost Savings ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Baseline Cost ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "da96f1a4-30f9-43d7-8ae3-f056ccd873be",
+            "sourceColumn": "Baseline Cost ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Actual Cost ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2889c7f8-77de-479c-acb1-b3adc380f7fe",
+            "sourceColumn": "Actual Cost ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Sum of Lead Times (days)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "00e2e409-fa1e-4983-8fbd-c62dce491cc4",
+            "sourceColumn": "Sum of Lead Times (days)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0bcf4e1b-7524-4f50-9345-5b7886dbf1c9",
+            "sourceColumn": "Number of Orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of On-Time Deliveries",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9da9558e-3001-4c30-be9e-34d7adfec270",
+            "sourceColumn": "Number of On-Time Deliveries",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Deliveries",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e881af46-ee22-4f8a-aba3-eeae6ad87c00",
+            "sourceColumn": "Total Deliveries",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Delivery Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "84faf333-2da5-4d28-a514-48bf6e97249a",
+            "sourceColumn": "Delivery Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Purchase Requisition Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dbf287db-467d-473f-8160-0eacab6b67bb",
+            "sourceColumn": "Purchase Requisition Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Number of Accurate Orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "55ded573-7740-4af2-b98b-b6a167f813ae",
+            "sourceColumn": "Number of Accurate Orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Purchase Orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4bcf9fc1-5295-479a-bb36-e0bfcdd2b218",
+            "sourceColumn": "Total Purchase Orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Defective Items",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e8ffc42f-a2bf-4ba4-8075-27964ecf6a53",
+            "sourceColumn": "Number of Defective Items",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Items Received",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "737f2b15-41c0-4ce3-8c9c-5e5126d4fd56",
+            "sourceColumn": "Total Items Received",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "af5b6d35-2630-4e17-ab6e-bd8ad25ad08d",
+        "partitions": [
+          {
+            "name": "Procurement",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(Web.Contents(\"https://drive.google.com/uc?export=download&id=1croRjS3D4K204xIdRBcd0T9TSFBBkvzL\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Supplier ID\", type text}, {\"Cost Savings ($)\", Int64.Type}, {\"Baseline Cost ($)\", Int64.Type}, {\"Actual Cost ($)\", Int64.Type}, {\"Sum of Lead Times (days)\", Int64.Type}, {\"Number of Orders\", Int64.Type}, {\"Number of On-Time Deliveries\", Int64.Type}, {\"Total Deliveries\", Int64.Type}, {\"Delivery Date\", type text}, {\"Purchase Requisition Date\", type text}, {\"Number of Accurate Orders\", Int64.Type}, {\"Total Purchase Orders\", Int64.Type}, {\"Number of Defective Items\", Int64.Type}, {\"Total Items Received\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Inventory",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Product ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "44376d93-7a61-4569-a49f-fc56139d9941",
+            "sourceColumn": "Product ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Average Inventory ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "78e3823f-6829-42ef-bc74-a46bcb18ab21",
+            "sourceColumn": "Average Inventory ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Cost of Goods Sold (COGS) ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e1167101-71f3-49f2-9e35-1c9afbfa996f",
+            "sourceColumn": "Cost of Goods Sold (COGS) ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Stockouts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d6cc8eeb-799a-427b-a011-bd8d4a117d0b",
+            "sourceColumn": "Number of Stockouts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Order Occasions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e37af7eb-2c36-4654-b4dd-15fa6c21e931",
+            "sourceColumn": "Total Order Occasions",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Carrying Cost Percentage (%)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "377e84a0-a35c-40c7-80ae-cef15cc2e393",
+            "sourceColumn": "Carrying Cost Percentage (%)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Returned Items",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e4d5194d-a1ce-4189-ad95-87ed56fb3e43",
+            "sourceColumn": "Number of Returned Items",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Items Sold",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f142f437-02ce-4b71-93e8-4f7a076030d0",
+            "sourceColumn": "Total Items Sold",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Accurate Inventory Counts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "297047e2-b33e-4543-ae34-89b174fbc3f2",
+            "sourceColumn": "Accurate Inventory Counts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Inventory Counts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bbc49c57-489b-45ac-9d99-667b2e56fdc9",
+            "sourceColumn": "Total Inventory Counts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Lead Time Demand",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6ea06d5d-c73c-4977-bdc0-421880b26d64",
+            "sourceColumn": "Lead Time Demand",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Safety Stock",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "016e1f49-f161-441c-aeeb-3f74f9ddf333",
+            "sourceColumn": "Safety Stock",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Correct Cycle Counts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "861c770c-37d7-4bc3-93e3-ba793e3c7f1d",
+            "sourceColumn": "Correct Cycle Counts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Cycle Counts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "727c49b5-8d99-4902-a055-9e1a39e8b5d1",
+            "sourceColumn": "Total Cycle Counts",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "2e59b092-8803-4b85-b33a-d2455cf9648a",
+        "partitions": [
+          {
+            "name": "Inventory",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(Web.Contents(\"https://drive.google.com/uc?export=download&id=1tTpa02otJ9JIk-s4C9QEFDE9IwBbmpUN\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Product ID\", type text}, {\"Average Inventory ($)\", Int64.Type}, {\"Cost of Goods Sold (COGS) ($)\", Int64.Type}, {\"Number of Stockouts\", Int64.Type}, {\"Total Order Occasions\", Int64.Type}, {\"Carrying Cost Percentage (%)\", type number}, {\"Number of Returned Items\", Int64.Type}, {\"Total Items Sold\", Int64.Type}, {\"Accurate Inventory Counts\", Int64.Type}, {\"Total Inventory Counts\", Int64.Type}, {\"Lead Time Demand\", Int64.Type}, {\"Safety Stock\", Int64.Type}, {\"Correct Cycle Counts\", Int64.Type}, {\"Total Cycle Counts\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Warehouse",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "WareHouse ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1fda6b32-e5c2-4021-a83e-44b099a4e1ea",
+            "sourceColumn": "WareHouse ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COGS ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "24aa14eb-941f-4703-85d5-20535c63f103",
+            "sourceColumn": "COGS ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Beginning Inventory ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7315dd2c-e2d2-468b-a281-2c83a00e98b5",
+            "sourceColumn": "Beginning Inventory ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Ending Inventory ($)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3fd25bf1-3a52-48a6-bf27-613ffc39d252",
+            "sourceColumn": "Ending Inventory ($)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Correct Orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "25ce7aa5-81f5-4dab-8079-d7f0c1c4ca96",
+            "sourceColumn": "Total Correct Orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "58773edf-7af9-4678-98c6-1e4f701a13f8",
+            "sourceColumn": "Total Orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Used Storage Space (sq ft)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2e86d1eb-b4d2-41ea-8043-1e9f33de1461",
+            "sourceColumn": "Used Storage Space (sq ft)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Storage Space (sq ft)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7a259d5b-a13f-4c73-8263-87bb2843a3d7",
+            "sourceColumn": "Total Storage Space (sq ft)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Daily Storage Utilization (%)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "22e80da9-eb2c-4083-827d-fb5718467d40",
+            "sourceColumn": "Daily Storage Utilization (%)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "49e5c142-e2a6-418f-9e03-993915dc9a50",
+            "sourceColumn": "Number of Days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Correct Picks",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "59d23e35-e5af-47c4-af6b-97e0f4ee88a1",
+            "sourceColumn": "Number of Correct Picks",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Number of Picks",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "44ec8dd5-53f3-478e-a668-5abeab417d6f",
+            "sourceColumn": "Total Number of Picks",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Number of Backordered Items",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5dbaa96e-74dc-4b86-ae1a-9eeefc73c4d2",
+            "sourceColumn": "Number of Backordered Items",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Number of Ordered Items",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b55aa2dc-d3c2-476e-8bd6-303e35e2b59e",
+            "sourceColumn": "Total Number of Ordered Items",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "ec8fd5b5-0270-4e7a-8c38-b2a79bb293e4",
+        "partitions": [
+          {
+            "name": "Warehouse",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(Web.Contents(\"https://drive.google.com/uc?export=download&id=1sUI4zPXGbWhkV7lIXJRJkt4H8R6ZqNWw\"),[Delimiter=\",\", Columns=16, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"WareHouse ID\", type text}, {\"COGS ($)\", Int64.Type}, {\"Beginning Inventory ($)\", Int64.Type}, {\"Ending Inventory ($)\", Int64.Type}, {\"Total Correct Orders\", Int64.Type}, {\"Total Orders\", Int64.Type}, {\"Used Storage Space (sq ft)\", Int64.Type}, {\"Total Storage Space (sq ft)\", Int64.Type}, {\"Daily Storage Utilization (%)\", type number}, {\"Number of Days\", Int64.Type}, {\"Number of Correct Picks\", Int64.Type}, {\"Total Number of Picks\", Int64.Type}, {\"Number of Backordered Items\", Int64.Type}, {\"Total Number of Ordered Items\", Int64.Type}, {\"\", type text}, {\"_1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"\", \"_1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
