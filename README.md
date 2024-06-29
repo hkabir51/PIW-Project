@@ -9,13 +9,13 @@ rest of pages for visualization. Each module has 2 pages only.
 # Team Information
 ### Procurement > Mr. Dipongkar and Ms. Iffat
 ### Inventory   > Ms. Farhana and Mr. Yousuf
-### Warehouse   > Mr. Tanmoy and Mr. Navid
+### Warehouse   > Mr. Tanmoy
 
 # Color Code
-##### Background Code :
-##### Foreground Code :
-##### Font Code :
-##### Visuls Color Code :.
+##### Background Code : #e7e7e7
+##### Foreground Code : #10628B, Transparency 16 
+##### Font Code : White and Black
+##### Visuls Color Code : #10628B, #FE5220, #FA7325, #FF7A53, #FF7E34, #F56205,
 
 # Font Name, Size and Color
 ### Font Name : Segoe UI
