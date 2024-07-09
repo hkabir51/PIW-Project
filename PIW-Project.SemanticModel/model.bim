@@ -265,12 +265,12 @@
         "name": "Inventory",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -496,12 +496,12 @@
         "name": "Warehouse",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -749,11 +749,126 @@
             "lineageTag": "7951ada3-749c-479c-b276-528aa449c8f6"
           },
           {
-            "name": "Total_COGS",
+            "name": "COGS",
             "displayFolder": "Inventory",
             "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
             "formatString": "0",
             "lineageTag": "e6fa9544-a2c1-420c-953f-b5c153f2fbf9"
+          },
+          {
+            "name": "DOH",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(Inventory[Average Inventory ($)]),",
+              "    SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
+              ") * 365"
+            ],
+            "lineageTag": "1d39473f-00e0-4d5e-b4f4-b3c810cfccd9"
+          },
+          {
+            "name": "Stockout Rate",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "    DIVIDE(",
+              "        SUM(Inventory[Number of Stockouts]),",
+              "        SUM(Inventory[Total Order Occasions])",
+              "    ) * 100",
+              ""
+            ],
+            "lineageTag": "e1858fb7-706e-4786-9efb-a8765c510cab"
+          },
+          {
+            "name": "Carrying Cost",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": "SUMX('Inventory', 'Inventory'[Average Inventory ($)] * 'Inventory'[Carrying Cost Percentage (%)] / 100)",
+            "lineageTag": "5a5da6e8-b145-4457-9745-2c158e6f9704"
+          },
+          {
+            "name": "Rate of Return",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(Inventory[Number of Returned Items]),",
+              "    SUM(Inventory[Total Items Sold])",
+              ") * 100"
+            ],
+            "lineageTag": "be7fab34-f7fd-4a10-85bb-1c2628cdf79e"
+          },
+          {
+            "name": "Inventory Accuracy",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(Inventory[Accurate Inventory Counts]),",
+              "    SUM(Inventory[Total Inventory Counts])",
+              ") * 100",
+              ""
+            ],
+            "lineageTag": "3272335e-2a14-4c1e-bbf6-2b282cd2481f"
+          },
+          {
+            "name": "Reorder Point",
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "SUM(Inventory[Lead Time Demand]) + SUM(Inventory[Safety Stock])"
+            ],
+            "formatString": "0",
+            "lineageTag": "abdd399f-0b96-4dce-948f-1f44f21578a1"
+          },
+          {
+            "name": "Cycle Count Accuracy (Percentage)",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(Inventory[Correct Cycle Counts]),",
+              "    SUM(Inventory[Total Cycle Counts])",
+              ") * 100",
+              ""
+            ],
+            "lineageTag": "2618d294-b70a-4dcf-90a6-3c9130b61735"
           }
         ],
         "partitions": [

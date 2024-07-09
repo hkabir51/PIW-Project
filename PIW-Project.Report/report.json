@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.55\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.55\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -26,7 +26,71 @@
       "height": 720.00,
       "name": "09cbd1649364756e6ca8",
       "ordinal": 3,
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"38718ade02e2c273a54a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":435.3283974205875,\"y\":253.1263434439933,\"z\":6000,\"width\":835.1946501074756,\"height\":427.9914019584428,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Inventory.Product ID\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(Inventory.Total Inventory Counts)\"},{\"queryRef\":\"Sum(Inventory.Number of Returned Items)\"},{\"queryRef\":\"Sum(Inventory.Total Items Sold)\"},{\"queryRef\":\"Sum(Inventory.Carrying Cost Percentage (%))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Inventory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Product ID\"},\"Name\":\"Inventory.Product ID\",\"NativeReferenceName\":\"Product ID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Total Inventory Counts\"}},\"Function\":0},\"Name\":\"Sum(Inventory.Total Inventory Counts)\",\"NativeReferenceName\":\"Sum of Total Inventory Counts\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Number of Returned Items\"}},\"Function\":0},\"Name\":\"Sum(Inventory.Number of Returned Items)\",\"NativeReferenceName\":\"Sum of Number of Returned Items\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Total Items Sold\"}},\"Function\":0},\"Name\":\"Sum(Inventory.Total Items Sold)\",\"NativeReferenceName\":\"Sum of Total Items Sold\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Carrying Cost Percentage (%)\"}},\"Function\":0},\"Name\":\"Sum(Inventory.Carrying Cost Percentage (%))\",\"NativeReferenceName\":\"Sum of Carrying Cost Percentage (%)\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 427.99,
+          "width": 835.19,
+          "x": 435.33,
+          "y": 253.13,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"7219907a600946812436\",\"layouts\":[{\"id\":0,\"position\":{\"x\":785.0585144494866,\"y\":51.35896823501314,\"z\":3000,\"width\":289.811320754717,\"height\":123.50609027943635,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.Cycle Count Accuracy (Percentage)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Cycle Count Accuracy (Percentage)\"},\"Name\":\"_Measure.Cycle Count Accuracy (Percentage)\",\"NativeReferenceName\":\"Cycle Count Accuracy (Percentage)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Cycle Count Accuracy (Percentage)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 123.51,
+          "width": 289.81,
+          "x": 785.06,
+          "y": 51.36,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"793a0413c2c0c7dd4150\",\"layouts\":[{\"id\":0,\"position\":{\"x\":529.4865058514449,\"y\":50.136135657989016,\"z\":2000,\"width\":243.34368282780034,\"height\":123.50609027943635,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.Rate of Return\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Rate of Return\"},\"Name\":\"_Measure.Rate of Return\",\"NativeReferenceName\":\"Rate of Return\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Rate of Return\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 123.51,
+          "width": 243.34,
+          "x": 529.49,
+          "y": 50.14,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"869abc421c0854da3960\",\"layouts\":[{\"id\":0,\"position\":{\"x\":22.0109863864342,\"y\":253.1263434439933,\"z\":5000,\"width\":375.4096011464056,\"height\":427.9914019584428,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Inventory.Product ID\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Inventory.Number of Returned Items)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Inventory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Product ID\"},\"Name\":\"Inventory.Product ID\",\"NativeReferenceName\":\"Product ID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Number of Returned Items\"}},\"Function\":0},\"Name\":\"Sum(Inventory.Number of Returned Items)\",\"NativeReferenceName\":\"Sum of Number of Returned Items\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Number of Returned Items\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 427.99,
+          "width": 375.41,
+          "x": 22.01,
+          "y": 253.13,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"cd4662c51a4deac01a1c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":275.1373298304275,\"y\":47.69047050394077,\"z\":1000,\"width\":243.34368282780034,\"height\":123.50609027943635,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.DOH\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"DOH\"},\"Name\":\"_Measure.DOH\",\"NativeReferenceName\":\"DOH\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"DOH\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 123.51,
+          "width": 243.34,
+          "x": 275.14,
+          "y": 47.69,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fb6d76db249ba90eddd4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1095.6579890136136,\"y\":51.35896823501314,\"z\":4000,\"width\":150.40840697396703,\"height\":122.28325770241223,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.Stockout Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Stockout Rate\"},\"Name\":\"_Measure.Stockout Rate\",\"NativeReferenceName\":\"Stockout Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Stockout Rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 122.28,
+          "width": 150.41,
+          "x": 1095.66,
+          "y": 51.36,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"fe0359dce80e2bbb7a25\",\"layouts\":[{\"id\":0,\"position\":{\"x\":22.0109863864342,\"y\":47.69047050394077,\"z\":0,\"width\":243.34368282780034,\"height\":123.50609027943635,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.COGS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"},\"Name\":\"_Measure.COGS\",\"NativeReferenceName\":\"COGS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 123.51,
+          "width": 243.34,
+          "x": 22.01,
+          "y": 47.69,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     },
     {
