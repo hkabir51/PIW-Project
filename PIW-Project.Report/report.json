@@ -131,6 +131,15 @@
           "x": 380.49,
           "y": 105.37,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bd206f0142eb08ba581b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.405487804878,\"y\":105.36585365853658,\"width\":300,\"height\":300,\"z\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measure.DOH\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"DOH\"},\"Name\":\"_Measure.DOH\",\"NativeReferenceName\":\"DOH\"}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 300.00,
+          "x": 764.41,
+          "y": 105.37,
+          "z": 1.00
         }
       ],
       "width": 1280.00
