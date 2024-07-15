@@ -187,6 +187,15 @@
           "z": 4000.00
         },
         {
+          "config": "{\"name\":\"765105513dbe52904e5d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":487.3170731707317,\"y\":360,\"z\":5003,\"width\":254.6341463414634,\"height\":150.73170731707316,\"tabOrder\":5003}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.COGS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"},\"Name\":\"_Measure.COGS\",\"NativeReferenceName\":\"COGS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 150.73,
+          "width": 254.63,
+          "x": 487.32,
+          "y": 360.00,
+          "z": 5003.00
+        },
+        {
           "config": "{\"name\":\"808be89dcbd00b004776\",\"layouts\":[{\"id\":0,\"position\":{\"x\":265.1080050825921,\"y\":0,\"z\":1000,\"width\":253.72299872935196,\"height\":126.86149936467598,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(Inventory.Total Inventory Counts)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Inventory\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Total Inventory Counts\"}},\"Function\":0},\"Name\":\"Sum(Inventory.Total Inventory Counts)\",\"NativeReferenceName\":\"Sum of Total Inventory Counts\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Total Inventory Counts\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
           "filters": "[]",
           "height": 126.86,
