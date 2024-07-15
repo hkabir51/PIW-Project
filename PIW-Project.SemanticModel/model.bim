@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.901.0 (24.07)"
+        "value": "2.127.1327.0 (24.03)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -744,7 +744,7 @@
             "name": "COGS",
             "displayFolder": "Inventory",
             "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
-            "formatString": "0.00",
+            "formatString": "0",
             "lineageTag": "e6fa9544-a2c1-420c-953f-b5c153f2fbf9"
           },
           {
@@ -767,6 +767,12 @@
           },
           {
             "name": "Stockout Rate",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
             "displayFolder": "Inventory",
             "expression": [
               "",
@@ -776,7 +782,6 @@
               "    ) * 100",
               ""
             ],
-            "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "e1858fb7-706e-4786-9efb-a8765c510cab"
           },
           {
