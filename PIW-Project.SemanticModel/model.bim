@@ -267,10 +267,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -498,10 +494,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -752,7 +744,7 @@
             "name": "COGS",
             "displayFolder": "Inventory",
             "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
-            "formatString": "0",
+            "formatString": "0.00",
             "lineageTag": "e6fa9544-a2c1-420c-953f-b5c153f2fbf9"
           },
           {
