@@ -142,12 +142,12 @@
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"30c4a0aad4bdb459e09d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":455.5,\"width\":254,\"height\":150,\"z\":5001,\"tabOrder\":5001}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.COGS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"},\"Name\":\"_Measure.COGS\",\"NativeReferenceName\":\"COGS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"30c4a0aad4bdb459e09d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":228.29268292682926,\"z\":5001,\"width\":254.6341463414634,\"height\":150.73170731707316,\"tabOrder\":5001}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Measure.COGS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"},\"Name\":\"_Measure.COGS\",\"NativeReferenceName\":\"COGS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"COGS\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 150.00,
-          "width": 254.00,
+          "height": 150.73,
+          "width": 254.63,
           "x": 0.00,
-          "y": 455.50,
+          "y": 228.29,
           "z": 5001.00
         },
         {
