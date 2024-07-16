@@ -798,12 +798,6 @@
           },
           {
             "name": "Rate of Return",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Inventory",
             "expression": [
               "",
@@ -812,6 +806,7 @@
               "    SUM(Inventory[Total Items Sold])",
               ") * 100"
             ],
+            "formatString": "0%;-0%;0%",
             "lineageTag": "be7fab34-f7fd-4a10-85bb-1c2628cdf79e"
           },
           {
