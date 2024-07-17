@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1567,
+  "compatibilityLevel": 1550,
   "model": {
     "annotations": [
       {
@@ -165,23 +165,9 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isDateTimeCustom\":true}"
               }
             ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "dd/mm/yyyy",
+            "dataType": "string",
             "lineageTag": "84faf333-2da5-4d28-a514-48bf6e97249a",
             "sourceColumn": "Delivery Date",
             "summarizeBy": "none"
@@ -192,23 +178,9 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isDateTimeCustom\":true}"
               }
             ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "mm/dd/yyyy",
+            "dataType": "string",
             "lineageTag": "dbf287db-467d-473f-8160-0eacab6b67bb",
             "sourceColumn": "Purchase Requisition Date",
             "summarizeBy": "none"
@@ -271,75 +243,6 @@
           }
         ],
         "lineageTag": "af5b6d35-2630-4e17-ab6e-bd8ad25ad08d",
-        "measures": [
-          {
-            "name": "Average Lead Time",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "expression": "AVERAGE(Procurement[Sum of Lead Times (days)])",
-            "lineageTag": "464b5431-af3c-4212-a837-15d196dbcf1e"
-          },
-          {
-            "name": "Total Orders",
-            "expression": [
-              "SUM('Procurement'[Number of Accurate Orders]) + SUM('Procurement'[Number of Defective Items])",
-              ""
-            ],
-            "formatString": "0",
-            "lineageTag": "45ba4825-5f23-4833-b7db-654d5b190680"
-          },
-          {
-            "name": "Supplier Rank",
-            "expression": [
-              "RANKX(",
-              "    ALL('Procurement'[Supplier ID]),",
-              "    [Total Orders],",
-              "    ,",
-              "    DESC,",
-              "    DENSE",
-              ")"
-            ],
-            "formatString": "0",
-            "lineageTag": "2ac81e34-28ed-432b-a20f-7d9943906a8c"
-          },
-          {
-            "name": "Top 10 Suppliers",
-            "expression": "IF([Supplier Rank] <= 10, 1, 0)",
-            "formatString": "0",
-            "lineageTag": "3c205e20-440e-4cb6-bc6f-03795d6632e0"
-          },
-          {
-            "name": "Total Items_Received",
-            "expression": "SUM('Procurement'[Total Items Received])",
-            "formatString": "0",
-            "lineageTag": "a5cec255-82f2-4a05-9b36-10238df3179d"
-          },
-          {
-            "name": "Procurement Cycle Time",
-            "lineageTag": "3d8a7d21-4c25-4963-9f69-d46be69f1728"
-          },
-          {
-            "name": "Number of Orders This Month",
-            "expression": [
-              "",
-              "    CALCULATE(",
-              "        COUNTROWS(Procurement),",
-              "        FILTER(",
-              "            Procurement,",
-              "            MONTH(Procurement[Purchase Requisition Date]) = MONTH(TODAY()) &&",
-              "            YEAR(Procurement[Purchase Requisition Date]) = YEAR(TODAY())",
-              "        )",
-              "    )",
-              ""
-            ],
-            "formatString": "0",
-            "lineageTag": "b5ac521d-ebcd-42ae-a5a1-dd191b86d059"
-          }
-        ],
         "partitions": [
           {
             "name": "Procurement",
@@ -849,7 +752,7 @@
             "annotations": [
               {
                 "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
+                "value": "{\"isDecimal\":true}"
               }
             ],
             "displayFolder": "Inventory",
@@ -860,6 +763,7 @@
               "    SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
               ") * 365"
             ],
+            "formatString": "0",
             "lineageTag": "1d39473f-00e0-4d5e-b4f4-b3c810cfccd9"
           },
           {
@@ -958,61 +862,6 @@
               ""
             ],
             "lineageTag": "2618d294-b70a-4dcf-90a6-3c9130b61735"
-          },
-          {
-            "name": "Cost_Savings",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"en-US\"}"
-              }
-            ],
-            "displayFolder": "Procurement",
-            "expression": "SUM(Procurement[Cost Savings ($)])",
-            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
-            "lineageTag": "bdd438cf-4b04-4370-ba41-9ecbda7f3faf"
-          },
-          {
-            "name": "Total_order",
-            "displayFolder": "Procurement",
-            "expression": "SUM(Procurement[Number of Orders])",
-            "formatString": "0.0",
-            "lineageTag": "b30440a1-f436-4c58-a82d-ec74cda3a4ee"
-          },
-          {
-            "name": "Defective_Items",
-            "displayFolder": "Procurement",
-            "expression": "SUM(Procurement[Number of Defective Items])",
-            "formatString": "#,0",
-            "lineageTag": "3009c894-302e-4c23-bbd6-46763b8699e7"
-          },
-          {
-            "name": "Total Deliveries",
-            "displayFolder": "Procurement",
-            "expression": "SUM(Procurement[Total Deliveries])",
-            "formatString": "0",
-            "lineageTag": "1284068e-00f2-49d2-8f79-72f6697e4608"
-          },
-          {
-            "name": "On time Deliveries",
-            "displayFolder": "Procurement",
-            "expression": "SUM(Procurement[Number of On-Time Deliveries])",
-            "formatString": "0",
-            "lineageTag": "f0a48b97-e18b-47df-bf5a-7e76046c2852"
-          },
-          {
-            "name": "Number of Order",
-            "displayFolder": "Procurement",
-            "expression": "SUM(Procurement[Number of Orders])",
-            "formatString": "0",
-            "lineageTag": "ae1ff50c-dbcc-46b7-93aa-80dd4a4002ca"
-          },
-          {
-            "name": "Number of Accurate Orders",
-            "displayFolder": "Procurement",
-            "expression": "SUM(Procurement[Number of Accurate Orders])",
-            "formatString": "0",
-            "lineageTag": "1aef717e-23cd-4639-b1a2-e86b67167db2"
           }
         ],
         "partitions": [
