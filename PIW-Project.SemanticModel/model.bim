@@ -841,7 +841,7 @@
             "name": "COGS",
             "displayFolder": "Inventory",
             "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
-            "formatString": "0",
+            "formatString": "0.00",
             "lineageTag": "e6fa9544-a2c1-420c-953f-b5c153f2fbf9"
           },
           {
@@ -895,12 +895,6 @@
           },
           {
             "name": "Rate of Return",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Inventory",
             "expression": [
               "",
@@ -909,6 +903,7 @@
               "    SUM(Inventory[Total Items Sold])",
               ") * 100"
             ],
+            "formatString": "0%;-0%;0%",
             "lineageTag": "be7fab34-f7fd-4a10-85bb-1c2628cdf79e"
           },
           {
