@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.901.0 (24.07)"
+        "value": "2.131.1126.0 (24.07)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -54,6 +54,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"Procurement\",\"TableItemName\":\"Supplier_Group\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
               }
             ],
             "dataType": "string",
@@ -268,6 +272,78 @@
             "lineageTag": "737f2b15-41c0-4ce3-8c9c-5e5126d4fd56",
             "sourceColumn": "Total Items Received",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Supplier_Group",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"p\",\"Entity\":\"Procurement\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Group A\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP001'\"}}],[{\"Literal\":{\"Value\":\"'SUP002'\"}}],[{\"Literal\":{\"Value\":\"'SUP003'\"}}],[{\"Literal\":{\"Value\":\"'SUP004'\"}}]]}}},{\"DisplayName\":\"Group B\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP005'\"}}],[{\"Literal\":{\"Value\":\"'SUP006'\"}}],[{\"Literal\":{\"Value\":\"'SUP007'\"}}],[{\"Literal\":{\"Value\":\"'SUP008'\"}}]]}}},{\"DisplayName\":\"Group C\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP009'\"}}],[{\"Literal\":{\"Value\":\"'SUP010'\"}}],[{\"Literal\":{\"Value\":\"'SUP011'\"}}],[{\"Literal\":{\"Value\":\"'SUP012'\"}}]]}}},{\"DisplayName\":\"Group D\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP013'\"}}],[{\"Literal\":{\"Value\":\"'SUP014'\"}}],[{\"Literal\":{\"Value\":\"'SUP015'\"}}],[{\"Literal\":{\"Value\":\"'SUP016'\"}}]]}}},{\"DisplayName\":\"Group E\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP017'\"}}],[{\"Literal\":{\"Value\":\"'SUP018'\"}}],[{\"Literal\":{\"Value\":\"'SUP019'\"}}],[{\"Literal\":{\"Value\":\"'SUP020'\"}}]]}}}]}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "\tTRUE,",
+              "\tISBLANK('Procurement'[Supplier ID]),",
+              "\t\"(Blank)\",",
+              "\t'Procurement'[Supplier ID] IN {\"SUP001\",",
+              "\t\t\"SUP002\",",
+              "\t\t\"SUP003\",",
+              "\t\t\"SUP004\"},",
+              "\t\"Group A\",",
+              "\t'Procurement'[Supplier ID] IN {\"SUP005\",",
+              "\t\t\"SUP006\",",
+              "\t\t\"SUP007\",",
+              "\t\t\"SUP008\"},",
+              "\t\"Group B\",",
+              "\t'Procurement'[Supplier ID] IN {\"SUP009\",",
+              "\t\t\"SUP010\",",
+              "\t\t\"SUP011\",",
+              "\t\t\"SUP012\"},",
+              "\t\"Group C\",",
+              "\t'Procurement'[Supplier ID] IN {\"SUP013\",",
+              "\t\t\"SUP014\",",
+              "\t\t\"SUP015\",",
+              "\t\t\"SUP016\"},",
+              "\t\"Group D\",",
+              "\t'Procurement'[Supplier ID] IN {\"SUP017\",",
+              "\t\t\"SUP018\",",
+              "\t\t\"SUP019\",",
+              "\t\t\"SUP020\"},",
+              "\t\"Group E\",",
+              "\t'Procurement'[Supplier ID]",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Procurement"
+                          }
+                        },
+                        "Property": "Supplier ID"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "dbfa20c9-a58b-4ab9-b65a-90a85915be68",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "af5b6d35-2630-4e17-ab6e-bd8ad25ad08d",
