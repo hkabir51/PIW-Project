@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.1126.0 (24.07)"
+        "value": "2.131.1203.0 (24.07)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -1089,6 +1089,81 @@
             "expression": "SUM(Procurement[Number of Accurate Orders])",
             "formatString": "0",
             "lineageTag": "1aef717e-23cd-4639-b1a2-e86b67167db2"
+          },
+          {
+            "name": "Guge Target",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Procurement",
+            "expression": "CALCULATE([Average Lead Time]*1.1, REMOVEFILTERS(Procurement[Supplier_Group]))",
+            "lineageTag": "1d142dfe-5982-4c8d-b470-b3f998366f58"
+          },
+          {
+            "name": "Guge Maximum",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR avg_lead_time = [Average Lead Time]",
+              "VAR Guge_max_Reg = [Guge Target]*1.2",
+              "VAR Guge_target = avg_lead_time*1.2",
+              "VAR Result = IF(avg_lead_time>Guge_max_Reg,Guge_target, Guge_max_Reg )",
+              "RETURN",
+              "Result"
+            ],
+            "lineageTag": "81dcd5d1-1da6-4792-b321-a68597b33243"
+          },
+          {
+            "name": "% of Defect_Items",
+            "displayFolder": "Procurement",
+            "expression": "DIVIDE([Defective_Items], SUM(Procurement[Total Items Received]))",
+            "formatString": "#,0.0%;-#,0.0%;#,0.0%",
+            "lineageTag": "32d81902-e3a0-465d-9c21-f47c5d1b95c0"
+          },
+          {
+            "name": "% of Acurate_order",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR acurate_order = SUM(Procurement[Number of Accurate Orders])",
+              "// VAR Total_purchese_order  = AVERAGE(Procurement[Total Purchase Orders])//",
+              "VAR Number_of_total_order = SUM(Procurement[Number of Orders])",
+              "VAR Result = DIVIDE(acurate_order, Number_of_total_order, 0)",
+              "RETURN",
+              "Result"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "a3b324d5-2772-4665-a732-e912ffb86dea"
+          },
+          {
+            "name": "% of Cost_Saving",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR Cost_Saving_Average = AVERAGE(Procurement[Cost Savings ($)])",
+              "VAR Actual_cost_Agerage = AVERAGE(Procurement[Actual Cost ($)])",
+              "VAR Result = DIVIDE(Cost_Saving_Average, Actual_cost_Agerage, 0)",
+              "RETURN",
+              "Result"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "0837b6ab-eac9-4497-9b6e-01adc7fbcc05"
+          },
+          {
+            "name": "% of On_time_delevery",
+            "displayFolder": "Procurement",
+            "expression": "1- DIVIDE([On time Deliveries], [Total Deliveries], 0)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "3093dff9-0a8c-4863-9062-6da58cb633bd"
           }
         ],
         "partitions": [
