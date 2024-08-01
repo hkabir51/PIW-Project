@@ -1,0 +1,21 @@
+// Learn more about DAX queries at https://aka.ms/dax-queries
+
+// Here is a sample DAX query from your model, click 'Run'
+// Try other DAX queries by right clicking a table, column, or measure in the data pane and choosing one from 'Quick queries'
+EVALUATE
+ADDCOLUMNS(
+    Procurement,
+    "Previous Month Cost Savings", 
+    VAR LD = LASTDATE(Procurement[Start_of_month_Delivery])
+    VAR Result = CALCULATE(
+        [Cost_Savings], 
+        FILTER(
+            ALL(Procurement), 
+            Procurement[Start_of_month_Delivery] = EDATE(LD, -1)
+        )
+    )
+    RETURN Result
+)
+
+)
+
