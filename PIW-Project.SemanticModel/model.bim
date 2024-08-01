@@ -16,7 +16,7 @@
       },
       {
         "name": "PBI_ProTooling",
-        "value": "[\"DevMode\"]"
+        "value": "[\"DevMode\",\"DaxQueryView_Desktop\"]"
       }
     ],
     "culture": "en-US",
@@ -45,6 +45,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -54,10 +58,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "__PBI_SemanticLinks",
-                "value": "[{\"LinkTarget\":{\"TableName\":\"Procurement\",\"TableItemName\":\"Supplier_Group\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
               }
             ],
             "dataType": "string",
@@ -179,11 +179,6 @@
                 "value": "{\"isDateTimeCustom\":true}"
               }
             ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
             "dataType": "dateTime",
             "formatString": "dd/mm/yyyy",
             "lineageTag": "84faf333-2da5-4d28-a514-48bf6e97249a",
@@ -204,11 +199,6 @@
               {
                 "name": "PBI_FormatHint",
                 "value": "{\"isDateTimeCustom\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "DataType"
               }
             ],
             "dataType": "dateTime",
@@ -274,74 +264,31 @@
             "summarizeBy": "sum"
           },
           {
-            "name": "Supplier_Group",
+            "name": "Group Based on Defective Items",
             "annotations": [
-              {
-                "name": "GroupingDesignState",
-                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"p\",\"Entity\":\"Procurement\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Group A\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP001'\"}}],[{\"Literal\":{\"Value\":\"'SUP002'\"}}],[{\"Literal\":{\"Value\":\"'SUP003'\"}}],[{\"Literal\":{\"Value\":\"'SUP004'\"}}]]}}},{\"DisplayName\":\"Group B\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP005'\"}}],[{\"Literal\":{\"Value\":\"'SUP006'\"}}],[{\"Literal\":{\"Value\":\"'SUP007'\"}}],[{\"Literal\":{\"Value\":\"'SUP008'\"}}]]}}},{\"DisplayName\":\"Group C\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP009'\"}}],[{\"Literal\":{\"Value\":\"'SUP010'\"}}],[{\"Literal\":{\"Value\":\"'SUP011'\"}}],[{\"Literal\":{\"Value\":\"'SUP012'\"}}]]}}},{\"DisplayName\":\"Group D\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP013'\"}}],[{\"Literal\":{\"Value\":\"'SUP014'\"}}],[{\"Literal\":{\"Value\":\"'SUP015'\"}}],[{\"Literal\":{\"Value\":\"'SUP016'\"}}]]}}},{\"DisplayName\":\"Group E\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplier ID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUP017'\"}}],[{\"Literal\":{\"Value\":\"'SUP018'\"}}],[{\"Literal\":{\"Value\":\"'SUP019'\"}}],[{\"Literal\":{\"Value\":\"'SUP020'\"}}]]}}}]}"
-              },
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
             "dataType": "string",
-            "expression": [
-              "SWITCH(",
-              "\tTRUE,",
-              "\tISBLANK('Procurement'[Supplier ID]),",
-              "\t\"(Blank)\",",
-              "\t'Procurement'[Supplier ID] IN {\"SUP001\",",
-              "\t\t\"SUP002\",",
-              "\t\t\"SUP003\",",
-              "\t\t\"SUP004\"},",
-              "\t\"Group A\",",
-              "\t'Procurement'[Supplier ID] IN {\"SUP005\",",
-              "\t\t\"SUP006\",",
-              "\t\t\"SUP007\",",
-              "\t\t\"SUP008\"},",
-              "\t\"Group B\",",
-              "\t'Procurement'[Supplier ID] IN {\"SUP009\",",
-              "\t\t\"SUP010\",",
-              "\t\t\"SUP011\",",
-              "\t\t\"SUP012\"},",
-              "\t\"Group C\",",
-              "\t'Procurement'[Supplier ID] IN {\"SUP013\",",
-              "\t\t\"SUP014\",",
-              "\t\t\"SUP015\",",
-              "\t\t\"SUP016\"},",
-              "\t\"Group D\",",
-              "\t'Procurement'[Supplier ID] IN {\"SUP017\",",
-              "\t\t\"SUP018\",",
-              "\t\t\"SUP019\",",
-              "\t\t\"SUP020\"},",
-              "\t\"Group E\",",
-              "\t'Procurement'[Supplier ID]",
-              ")"
-            ],
-            "extendedProperties": [
+            "lineageTag": "74558e68-a41e-459e-96ad-873d8b7d9147",
+            "sourceColumn": "Group Based on Defective Items",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Start_of_month _Delivery",
+            "annotations": [
               {
-                "name": "GroupingMetadata",
-                "type": "json",
-                "value": {
-                  "groupedColumns": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "Procurement"
-                          }
-                        },
-                        "Property": "Supplier ID"
-                      }
-                    }
-                  ],
-                  "version": 0
-                }
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
               }
             ],
+            "dataType": "dateTime",
+            "expression": "STARTOFMONTH(Procurement[Delivery Date])",
+            "formatString": "Short Date",
             "isDataTypeInferred": true,
-            "lineageTag": "dbfa20c9-a58b-4ab9-b65a-90a85915be68",
+            "lineageTag": "ce977256-bc97-4237-9861-a15b15bf0f0c",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -425,9 +372,13 @@
                 "let",
                 "    Source = Csv.Document(Web.Contents(\"https://drive.google.com/uc?export=download&id=1croRjS3D4K204xIdRBcd0T9TSFBBkvzL\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Supplier ID\", type text}, {\"Cost Savings ($)\", Int64.Type}, {\"Baseline Cost ($)\", Int64.Type}, {\"Actual Cost ($)\", Int64.Type}, {\"Sum of Lead Times (days)\", Int64.Type}, {\"Number of Orders\", Int64.Type}, {\"Number of On-Time Deliveries\", Int64.Type}, {\"Total Deliveries\", Int64.Type}, {\"Delivery Date\", type text}, {\"Purchase Requisition Date\", type text}, {\"Number of Accurate Orders\", Int64.Type}, {\"Total Purchase Orders\", Int64.Type}, {\"Number of Defective Items\", Int64.Type}, {\"Total Items Received\", Int64.Type}})",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Supplier ID\", type text}, {\"Cost Savings ($)\", Int64.Type}, {\"Baseline Cost ($)\", Int64.Type}, {\"Actual Cost ($)\", Int64.Type}, {\"Sum of Lead Times (days)\", Int64.Type}, {\"Number of Orders\", Int64.Type}, {\"Number of On-Time Deliveries\", Int64.Type}, {\"Total Deliveries\", Int64.Type}, {\"Delivery Date\", type text}, {\"Purchase Requisition Date\", type text}, {\"Number of Accurate Orders\", Int64.Type}, {\"Total Purchase Orders\", Int64.Type}, {\"Number of Defective Items\", Int64.Type}, {\"Total Items Received\", Int64.Type}}),",
+                "    #\"Changed Type with Locale\" = Table.TransformColumnTypes(#\"Changed Type\", {{\"Delivery Date\", type date}}, \"en-GB\"),",
+                "    #\"Changed Type with Locale1\" = Table.TransformColumnTypes(#\"Changed Type with Locale\", {{\"Purchase Requisition Date\", type date}}, \"en-GB\"),",
+                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Changed Type with Locale1\", \"Custom\", each if [Number of Defective Items] < 30 then \"Group_A\" else if [Number of Defective Items] < 60 then \"Group_B\" else if [Number of Defective Items] < 90 then \"Group_C\" else \"Group_D\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Conditional Column\",{{\"Custom\", \"Group Based on Defective Items\"}})",
                 "in",
-                "    #\"Changed Type\""
+                "    #\"Renamed Columns\""
               ],
               "type": "m"
             }
@@ -1057,9 +1008,14 @@
           },
           {
             "name": "Defective_Items",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
             "displayFolder": "Procurement",
             "expression": "SUM(Procurement[Number of Defective Items])",
-            "formatString": "#,0",
             "lineageTag": "3009c894-302e-4c23-bbd6-46763b8699e7"
           },
           {
@@ -1099,7 +1055,7 @@
               }
             ],
             "displayFolder": "Procurement",
-            "expression": "CALCULATE([Average Lead Time]*1.1, REMOVEFILTERS(Procurement[Supplier_Group]))",
+            "expression": "CALCULATE([Average Lead Time]*1.1, REMOVEFILTERS(Procurement[Group Based on Defective Items]))",
             "lineageTag": "1d142dfe-5982-4c8d-b470-b3f998366f58"
           },
           {
@@ -1125,7 +1081,7 @@
           {
             "name": "% of Defect_Items",
             "displayFolder": "Procurement",
-            "expression": "DIVIDE([Defective_Items], SUM(Procurement[Total Items Received]))",
+            "expression": "DIVIDE([Defective_Items], [Total Item Received])",
             "formatString": "#,0.0%;-#,0.0%;#,0.0%",
             "lineageTag": "32d81902-e3a0-465d-9c21-f47c5d1b95c0"
           },
@@ -1159,11 +1115,84 @@
             "lineageTag": "0837b6ab-eac9-4497-9b6e-01adc7fbcc05"
           },
           {
-            "name": "% of On_time_delevery",
+            "name": "Supplier Reliability",
             "displayFolder": "Procurement",
-            "expression": "1- DIVIDE([On time Deliveries], [Total Deliveries], 0)",
+            "expression": "DIVIDE([On time Deliveries], [Total Deliveries], 0)",
             "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "3093dff9-0a8c-4863-9062-6da58cb633bd"
+          },
+          {
+            "name": "Total Item Received",
+            "displayFolder": "Procurement",
+            "expression": "SUM(Procurement[Total Items Received])",
+            "formatString": "0",
+            "lineageTag": "5f9b5f93-178c-4c98-b042-48d6f59eda7a"
+          },
+          {
+            "name": "PY Cost Savings",
+            "displayFolder": "Procurement",
+            "expression": "CALCULATE([Cost_Savings], SAMEPERIODLASTYEAR(Procurement[Delivery Date]))",
+            "formatString": "0",
+            "lineageTag": "c3ecc3fe-8d9a-4035-9923-d7653d51a75c"
+          },
+          {
+            "name": "PY Cost",
+            "displayFolder": "Procurement",
+            "expression": "CALCULATE([Cost_Savings], PREVIOUSMONTH(Procurement[Delivery Date]))",
+            "formatString": "0",
+            "lineageTag": "d6b73519-60e6-493c-a840-6a6ca17b48c9"
+          },
+          {
+            "name": "Last Motnh Cost Saving",
+            "displayFolder": "Procurement",
+            "expression": "CALCULATE([Cost_Savings], PREVIOUSMONTH(Procurement[Delivery Date]))",
+            "formatString": "0",
+            "lineageTag": "65a9aff8-3d7d-440f-a735-3fcb927e5c1d"
+          },
+          {
+            "name": "Top Supplier by Cost Savings",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "    CALCULATE(",
+              "        MAX('Procurement'[Supplier ID]),",
+              "        TOPN(",
+              "            4, ",
+              "            SUMMARIZE(",
+              "                'Procurement', ",
+              "                'Procurement'[Supplier ID], ",
+              "                \"CostSavings\", ",
+              "                SUM('Procurement'[Cost Savings ($)])",
+              "            ), ",
+              "            [CostSavings], ",
+              "            DESC",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "59a59e55-61ea-4eea-9e1a-dd840e6d92d2"
+          },
+          {
+            "name": "Top3Suppliers",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR TopNTable =",
+              "    TOPN(",
+              "        3,",
+              "        ALL(Procurement), -- Replace 'Procurement' with your table name",
+              "        [Cost_Savings], ",
+              "        DESC",
+              "    )",
+              "RETURN",
+              "    SUMMARIZE(",
+              "        TopNTable,",
+              "        Procurement[Supplier ID], ",
+              "        \"TotalCostSavings\", [Cost_Savings]",
+              "    )",
+              "",
+              ""
+            ],
+            "lineageTag": "bfdf7760-495f-465d-8c5c-c97d8be13ff1"
           }
         ],
         "partitions": [
