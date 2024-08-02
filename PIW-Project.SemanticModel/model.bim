@@ -9,7 +9,9 @@
       {
         "name": "PBIDesktopVersion",
 
+
         "value": "2.127.1327.0 (24.03)"
+
 
       },
       {
@@ -1662,7 +1664,9 @@
                   "Binding": {
                     "ConceptualEntity": "Procurement",
 
+
                     "ConceptualProperty": "Average Lead Time (days)"
+
 
                   }
                 },
@@ -2519,7 +2523,9 @@
                   "Binding": {
                     "ConceptualEntity": "Procurement",
 
+
                     "ConceptualProperty": "Number of Orders Last Month"
+
 
                   }
                 },
@@ -11382,6 +11388,110 @@
             "lineageTag": "727c49b5-8d99-4902-a055-9e1a39e8b5d1",
             "sourceColumn": "Total Cycle Counts",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Number of Stockouts] = 0, \"No Stockouts\",",
+              "    Inventory[Number of Stockouts] > 0 && Inventory[Number of Stockouts] <= 5, \"Low Stockouts\",",
+              "    Inventory[Number of Stockouts] > 5 && Inventory[Number of Stockouts] <= 10, \"Moderate Stockouts\",",
+              "    Inventory[Number of Stockouts] > 10, \"High Stockouts\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "31e79413-dc82-4694-99a1-ad19fc8bc850",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "ReturnStatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Number of Returned Items] = 0, \"No Returns\",",
+              "    Inventory[Number of Returned Items] > 0 && Inventory[Number of Returned Items] <= 10, \"Low Returns\",",
+              "    Inventory[Number of Returned Items] > 10 && Inventory[Number of Returned Items] <= 30, \"Moderate Returns\",",
+              "    Inventory[Number of Returned Items] > 30, \"High Returns\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "71dbe5b7-f429-4bee-b984-7b6441e47f8e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "ReturnSegment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Number of Returned Items] = 0, \"No Returns\",",
+              "    Inventory[Number of Returned Items] > 0 && Inventory[Number of Returned Items] <= 10, \"Low Returns\",",
+              "    Inventory[Number of Returned Items] > 10 && Inventory[Number of Returned Items] <= 30, \"Moderate Returns\",",
+              "    Inventory[Number of Returned Items] > 30, \"High Returns\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "670748ef-2f2e-4328-a514-d3c1d9ca0688",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "SalesSegment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Total Items Sold] <= 5000, \"Low Sales\",",
+              "    Inventory[Total Items Sold] > 5000 && Inventory[Total Items Sold] <= 10000, \"Moderate Sales\",",
+              "    Inventory[Total Items Sold] > 10000 && Inventory[Total Items Sold] <= 15000, \"High Sales\",",
+              "    Inventory[Total Items Sold] > 15000, \"Very High Sales\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "44102c9c-8543-4db6-9988-f3e95a075620",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "2e59b092-8803-4b85-b33a-d2455cf9648a",
@@ -11847,7 +11957,9 @@
             ],
             "displayFolder": "Procurement",
 
+
             "expression": "CALCULATE([Average Lead Time (days)]*1.1, REMOVEFILTERS(Procurement[Group Based on Defective Items]))",
+
 
             "lineageTag": "1d142dfe-5982-4c8d-b470-b3f998366f58"
           },
@@ -11863,7 +11975,9 @@
             "expression": [
               "",
 
+
               "VAR avg_lead_time = [Average Lead Time (days)]",
+
 
               "VAR Guge_max_Reg = [Guge Target]*1.2",
               "VAR Guge_target = avg_lead_time*1.2",
@@ -11966,6 +12080,7 @@
             ],
             "lineageTag": "59a59e55-61ea-4eea-9e1a-dd840e6d92d2"
 
+
           },
           {
             "name": "Average Procurement Cycle Time (days)",
@@ -11973,6 +12088,7 @@
             "expression": "AVERAGEX( Procurement, DATEDIFF( Procurement[Purchase Requisition Date], Procurement[Delivery Date], DAY))",
             "formatString": "0",
             "lineageTag": "789fc128-a866-44b7-9be5-32ef26dad55e"
+
 
           }
         ],
