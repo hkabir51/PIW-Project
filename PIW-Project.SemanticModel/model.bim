@@ -1659,7 +1659,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Procurement",
-                    "ConceptualProperty": "Average Lead Time"
+                    "ConceptualProperty": "Average Lead Time (days)"
                   }
                 },
                 "State": "Generated",
@@ -2514,7 +2514,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Procurement",
-                    "ConceptualProperty": "Number of Orders This Month"
+                    "ConceptualProperty": "Number of Orders Last Month"
                   }
                 },
                 "State": "Generated",
@@ -2582,128 +2582,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.624
-                    }
-                  }
-                ]
-              },
-              "procurement.procurement_cycle_time": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Procurement",
-                    "ConceptualProperty": "Procurement Cycle Time"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "procurement cycle time": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "cycle time": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "procurement cycle duration": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "procurement cycle interval": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "procurement cycle moment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "cycle duration": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "cycle interval": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "cycle moment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "procurement cycle period": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "procurement cycle timetable": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "cycle period": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "cycle timetable": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
                     }
                   }
                 ]
@@ -11056,7 +10934,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "0.0",
             "lineageTag": "e881af46-ee22-4f8a-aba3-eeae6ad87c00",
             "sourceColumn": "Total Deliveries",
             "summarizeBy": "sum"
@@ -11156,7 +11034,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "0.0",
             "lineageTag": "737f2b15-41c0-4ce3-8c9c-5e5126d4fd56",
             "sourceColumn": "Total Items Received",
             "summarizeBy": "sum"
@@ -11194,14 +11072,9 @@
         "lineageTag": "af5b6d35-2630-4e17-ab6e-bd8ad25ad08d",
         "measures": [
           {
-            "name": "Average Lead Time",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
+            "name": "Average Lead Time (days)",
             "expression": "AVERAGE(Procurement[Sum of Lead Times (days)])",
+            "formatString": "0",
             "lineageTag": "464b5431-af3c-4212-a837-15d196dbcf1e"
           },
           {
@@ -11240,18 +11113,14 @@
             "lineageTag": "a5cec255-82f2-4a05-9b36-10238df3179d"
           },
           {
-            "name": "Procurement Cycle Time",
-            "lineageTag": "3d8a7d21-4c25-4963-9f69-d46be69f1728"
-          },
-          {
-            "name": "Number of Orders This Month",
+            "name": "Number of Orders Last Month",
             "expression": [
               "",
               "    CALCULATE(",
               "        COUNTROWS(Procurement),",
               "        FILTER(",
               "            Procurement,",
-              "            MONTH(Procurement[Purchase Requisition Date]) = MONTH(TODAY()) &&",
+              "            MONTH(Procurement[Purchase Requisition Date]) = MONTH(LASTDATE(Procurement[Purchase Requisition Date])) &&",
               "            YEAR(Procurement[Purchase Requisition Date]) = YEAR(TODAY())",
               "        )",
               "    )",
@@ -11259,6 +11128,18 @@
             ],
             "formatString": "0",
             "lineageTag": "b5ac521d-ebcd-42ae-a5a1-dd191b86d059"
+          },
+          {
+            "name": "On-Time Delivery Rate",
+            "expression": [
+              "",
+              "    DIVIDE(",
+              "        SUM('Procurement'[Number of On-Time Deliveries]), ",
+              "        SUM('Procurement'[Total Deliveries])",
+              "    ) "
+            ],
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "782a62ba-500f-4943-b8f9-f4d8fc74a919"
           }
         ],
         "partitions": [
@@ -12057,7 +11938,7 @@
               }
             ],
             "displayFolder": "Procurement",
-            "expression": "CALCULATE([Average Lead Time]*1.1, REMOVEFILTERS(Procurement[Group Based on Defective Items]))",
+            "expression": "CALCULATE([Average Lead Time (days)]*1.1, REMOVEFILTERS(Procurement[Group Based on Defective Items]))",
             "lineageTag": "1d142dfe-5982-4c8d-b470-b3f998366f58"
           },
           {
@@ -12071,7 +11952,7 @@
             "displayFolder": "Procurement",
             "expression": [
               "",
-              "VAR avg_lead_time = [Average Lead Time]",
+              "VAR avg_lead_time = [Average Lead Time (days)]",
               "VAR Guge_max_Reg = [Guge Target]*1.2",
               "VAR Guge_target = avg_lead_time*1.2",
               "VAR Result = IF(avg_lead_time>Guge_max_Reg,Guge_target, Guge_max_Reg )",
@@ -12172,6 +12053,13 @@
               "    )"
             ],
             "lineageTag": "59a59e55-61ea-4eea-9e1a-dd840e6d92d2"
+          },
+          {
+            "name": "Average Procurement Cycle Time (days)",
+            "displayFolder": "Procurement",
+            "expression": "AVERAGEX( Procurement, DATEDIFF( Procurement[Purchase Requisition Date], Procurement[Delivery Date], DAY))",
+            "formatString": "0",
+            "lineageTag": "789fc128-a866-44b7-9be5-32ef26dad55e"
           }
         ],
         "partitions": [
