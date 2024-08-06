@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.901.0 (24.07)"
+        "value": "2.131.1203.0 (24.07)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -834,7 +834,7 @@
             "name": "Total_correct_orders",
             "displayFolder": "Wirehouse",
             "expression": "SUM(Warehouse[Total Correct Orders])",
-            "formatString": "0",
+            "formatString": "0.0",
             "lineageTag": "7951ada3-749c-479c-b276-528aa449c8f6"
           },
           {
@@ -960,6 +960,7 @@
             "lineageTag": "2618d294-b70a-4dcf-90a6-3c9130b61735"
           },
           {
+<<<<<<< Updated upstream
             "name": "Cost_Savings",
             "annotations": [
               {
@@ -1013,6 +1014,192 @@
             "expression": "SUM(Procurement[Number of Accurate Orders])",
             "formatString": "0",
             "lineageTag": "1aef717e-23cd-4639-b1a2-e86b67167db2"
+=======
+            "name": "Total_Inventory_Movement",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "SUM('Warehouse'[Ending Inventory ($)]) - SUM(Warehouse[Beginning Inventory ($)])",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "bfad9e96-436a-4049-8d15-2d466dfc84ca"
+          },
+          {
+            "name": "Total_Order",
+            "displayFolder": "Wirehouse",
+            "expression": "SUM(Warehouse[Total Orders])",
+            "formatString": "0.0",
+            "lineageTag": "232dadd4-9846-49e5-9060-0caf0fafc8ed"
+          },
+          {
+            "name": "Order_Accuracy",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "DIVIDE(SUM('Warehouse'[Total Correct Orders]), SUM('Warehouse'[Total Orders]), 0)",
+              ""
+            ],
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "0254ba45-f826-423f-96fd-ed5f0cfcf27a"
+          },
+          {
+            "name": "Backorder_Rate",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "DIVIDE(SUM(Warehouse[Number of Backordered Items]), ",
+              "SUM('Warehouse'[Total Number of Ordered Items]), 0)",
+              ""
+            ],
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "aa1c3389-d777-4eb0-a774-77075fd578cf"
+          },
+          {
+            "name": "Picking_Accuracy",
+            "displayFolder": "Wirehouse",
+            "expression": "DIVIDE(SUM(Warehouse[Number of Correct Picks]), SUM(Warehouse[Total Number of Picks]), 0) ",
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "c89a29e9-934e-4064-a09e-446337b0510d"
+          },
+          {
+            "name": "Highest_Storage_Utilization",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "MAX('Warehouse'[Daily Storage Utilization (%)])",
+              ""
+            ],
+            "lineageTag": "a4793f2e-9b3b-4860-be67-8a4017131e48"
+          },
+          {
+            "name": "Lowest_Storage_Utilization",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "MIN(Warehouse[Daily Storage Utilization (%)])",
+              ""
+            ],
+            "lineageTag": "a0e407a3-cd1f-465c-98a4-dd2b23ac9f5f"
+          },
+          {
+            "name": "Warehouse_HighestStorage_Utilization",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    MAX('Warehouse'[WareHouse ID]),",
+              "    FILTER('Warehouse', 'Warehouse'[Daily Storage Utilization (%)]= [Highest_Storage_Utilization])",
+              ")",
+              ""
+            ],
+            "lineageTag": "ab9fb3e8-2460-4e74-b062-e7d1ec00eba8"
+          },
+          {
+            "name": "Warehouse_Lowest_StorageUtilization",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "   MIN('Warehouse'[WareHouse ID]),",
+              "    FILTER('Warehouse', 'Warehouse'[Daily Storage Utilization (%)]= [Lowest_Storage_Utilization]))"
+            ],
+            "lineageTag": "3a6a0fa5-8d1e-4f0a-9b86-b48dc68b90ff"
+          },
+          {
+            "name": "COGS_Per_Order",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "DIVIDE(SUM('Warehouse'[COGS ($)]), SUM('Warehouse'[Total Orders]))",
+              ""
+            ],
+            "lineageTag": "004ca553-2976-4d78-8424-d7a14a0490b7"
+          },
+          {
+            "name": "COGS_Per_Ordered_Item",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "DIVIDE(SUM('Warehouse'[COGS ($)]), SUM('Warehouse'[Total Number of Ordered Items]))",
+              ""
+            ],
+            "lineageTag": "c93448df-738e-4a7d-afb5-b1562bef3bb1"
+          },
+          {
+            "name": "Average_Inventory",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "DIVIDE(SUM('Warehouse'[Beginning Inventory ($)]) + SUM('Warehouse'[Ending Inventory ($)]), 2)",
+              "",
+              "",
+              ""
+            ],
+            "lineageTag": "84b3a9b4-b554-4223-a9c1-ddbbaddf0c05"
+          },
+          {
+            "name": "Inventory_Turnover_Ratio",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": "DIVIDE(SUM('Warehouse'[COGS ($)]), [Average_Inventory])",
+            "lineageTag": "eab959df-76da-46dc-a92d-68bf8c22fbfa"
+          },
+          {
+            "name": "COGS_Backorder_Impact",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "[COGS_Per_Order] * SUM('Warehouse'[Number of Backordered Items])",
+              ""
+            ],
+            "lineageTag": "85314ec3-92b7-45e7-ae28-024b42fab384"
+          },
+          {
+            "name": "Storage_Utilization",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Wirehouse",
+            "expression": "DIVIDE(SUM(Warehouse[Used Storage Space (sq ft)]),SUM(Warehouse[Total Storage Space (sq ft)]),0)",
+            "lineageTag": "0ac0a4a0-494b-4ba7-8ab8-536ceb543355"
+>>>>>>> Stashed changes
           }
         ],
         "partitions": [
