@@ -8,7 +8,9 @@
       },
       {
         "name": "PBIDesktopVersion",
+
         "value": "2.127.1327.0 (24.03)"
+
       },
       {
         "name": "PBI_QueryOrder",
@@ -11370,6 +11372,110 @@
             "lineageTag": "727c49b5-8d99-4902-a055-9e1a39e8b5d1",
             "sourceColumn": "Total Cycle Counts",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Number of Stockouts] = 0, \"No Stockouts\",",
+              "    Inventory[Number of Stockouts] > 0 && Inventory[Number of Stockouts] <= 5, \"Low Stockouts\",",
+              "    Inventory[Number of Stockouts] > 5 && Inventory[Number of Stockouts] <= 10, \"Moderate Stockouts\",",
+              "    Inventory[Number of Stockouts] > 10, \"High Stockouts\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "31e79413-dc82-4694-99a1-ad19fc8bc850",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "ReturnStatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Number of Returned Items] = 0, \"No Returns\",",
+              "    Inventory[Number of Returned Items] > 0 && Inventory[Number of Returned Items] <= 10, \"Low Returns\",",
+              "    Inventory[Number of Returned Items] > 10 && Inventory[Number of Returned Items] <= 30, \"Moderate Returns\",",
+              "    Inventory[Number of Returned Items] > 30, \"High Returns\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "71dbe5b7-f429-4bee-b984-7b6441e47f8e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "ReturnSegment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Number of Returned Items] = 0, \"No Returns\",",
+              "    Inventory[Number of Returned Items] > 0 && Inventory[Number of Returned Items] <= 10, \"Low Returns\",",
+              "    Inventory[Number of Returned Items] > 10 && Inventory[Number of Returned Items] <= 30, \"Moderate Returns\",",
+              "    Inventory[Number of Returned Items] > 30, \"High Returns\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "670748ef-2f2e-4328-a514-d3c1d9ca0688",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "SalesSegment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Total Items Sold] <= 5000, \"Low Sales\",",
+              "    Inventory[Total Items Sold] > 5000 && Inventory[Total Items Sold] <= 10000, \"Moderate Sales\",",
+              "    Inventory[Total Items Sold] > 10000 && Inventory[Total Items Sold] <= 15000, \"High Sales\",",
+              "    Inventory[Total Items Sold] > 15000, \"Very High Sales\",",
+              "    \"Unknown\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "44102c9c-8543-4db6-9988-f3e95a075620",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "2e59b092-8803-4b85-b33a-d2455cf9648a",
