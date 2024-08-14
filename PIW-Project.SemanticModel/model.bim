@@ -8,7 +8,9 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.1203.0 (24.07)"
+
+        "value": "2.127.1327.0 (24.03)"
+
       },
       {
         "name": "PBI_QueryOrder",
