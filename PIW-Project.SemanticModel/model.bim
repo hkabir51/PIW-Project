@@ -8,9 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-
         "value": "2.127.1327.0 (24.03)"
-
       },
       {
         "name": "PBI_QueryOrder",
@@ -1661,9 +1659,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Procurement",
-
                     "ConceptualProperty": "Average Lead Time (days)"
-
                   }
                 },
                 "State": "Generated",
@@ -2518,9 +2514,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Procurement",
-
                     "ConceptualProperty": "Number of Orders Last Month"
-
                   }
                 },
                 "State": "Generated",
@@ -2592,7 +2586,6 @@
                   }
                 ]
               },
-
               "procurement.purchase_requisition_date": {
                 "Definition": {
                   "Binding": {
@@ -10832,10 +10825,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -11050,7 +11039,6 @@
             "sourceColumn": "Total Items Received",
             "summarizeBy": "sum"
           },
-
           {
             "name": "Group Based on Defective Items",
             "annotations": [
@@ -11846,9 +11834,7 @@
               }
             ],
             "displayFolder": "Procurement",
-
             "expression": "CALCULATE([Average Lead Time (days)]*1.1, REMOVEFILTERS(Procurement[Group Based on Defective Items]))",
-
             "lineageTag": "1d142dfe-5982-4c8d-b470-b3f998366f58"
           },
           {
@@ -11862,9 +11848,7 @@
             "displayFolder": "Procurement",
             "expression": [
               "",
-
               "VAR avg_lead_time = [Average Lead Time (days)]",
-
               "VAR Guge_max_Reg = [Guge Target]*1.2",
               "VAR Guge_target = avg_lead_time*1.2",
               "VAR Result = IF(avg_lead_time>Guge_max_Reg,Guge_target, Guge_max_Reg )",
@@ -11965,7 +11949,6 @@
               "    )"
             ],
             "lineageTag": "59a59e55-61ea-4eea-9e1a-dd840e6d92d2"
-
           },
           {
             "name": "Average Procurement Cycle Time (days)",
@@ -11973,7 +11956,6 @@
             "expression": "AVERAGEX( Procurement, DATEDIFF( Procurement[Purchase Requisition Date], Procurement[Delivery Date], DAY))",
             "formatString": "0",
             "lineageTag": "789fc128-a866-44b7-9be5-32ef26dad55e"
-
           }
         ],
         "partitions": [
