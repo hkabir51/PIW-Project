@@ -8,9 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-
-        "value": "2.127.1327.0 (24.03)"
-
+        "value": "2.132.1053.0 (24.08)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -2981,9 +2979,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Procurement",
-
                     "ConceptualProperty": "Last Month Orders"
-
                   }
                 },
                 "State": "Generated",
@@ -3107,7 +3103,6 @@
                   }
                 ]
               },
-
               "procurement.ontime_delivery_rate": {
                 "Definition": {
                   "Binding": {
@@ -3248,7 +3243,6 @@
                   }
                 ]
               },
-
               "procurement.purchase_requisition_date": {
                 "Definition": {
                   "Binding": {
@@ -11903,8 +11897,6 @@
               }
             ],
             "dataType": "int64",
-
-
             "lineageTag": "e881af46-ee22-4f8a-aba3-eeae6ad87c00",
             "sourceColumn": "Total Deliveries",
             "summarizeBy": "sum"
@@ -12008,8 +12000,6 @@
               }
             ],
             "dataType": "int64",
-
-
             "lineageTag": "737f2b15-41c0-4ce3-8c9c-5e5126d4fd56",
             "sourceColumn": "Total Items Received",
             "summarizeBy": "sum"
@@ -12044,7 +12034,6 @@
             "type": "calculated"
           },
           {
-
             "name": "Pur_Start_of_month",
             "annotations": [
               {
@@ -12064,7 +12053,6 @@
         "lineageTag": "af5b6d35-2630-4e17-ab6e-bd8ad25ad08d",
         "measures": [
           {
-
             "name": "Average Lead Time (days)",
             "expression": "AVERAGE(Procurement[Sum of Lead Times (days)])",
             "formatString": "0",
@@ -12106,9 +12094,7 @@
             "lineageTag": "a5cec255-82f2-4a05-9b36-10238df3179d"
           },
           {
-
             "name": "Last Month Orders",
-
             "expression": [
               "",
               "    CALCULATE(",
@@ -12933,9 +12919,7 @@
               }
             ],
             "displayFolder": "Procurement",
-
             "expression": "CALCULATE([Average Lead Time (days)]*1.1, REMOVEFILTERS(Procurement[Group]))",
-
             "lineageTag": "1d142dfe-5982-4c8d-b470-b3f998366f58"
           },
           {
@@ -13058,14 +13042,11 @@
             "lineageTag": "59a59e55-61ea-4eea-9e1a-dd840e6d92d2"
           },
           {
-
             "name": "Average Cycle Time (days)",
-
             "displayFolder": "Procurement",
             "expression": "AVERAGEX( Procurement, DATEDIFF( Procurement[Purchase Requisition Date], Procurement[Delivery Date], DAY))",
             "formatString": "0",
             "lineageTag": "789fc128-a866-44b7-9be5-32ef26dad55e"
-
           },
           {
             "name": "Baseline Cost",
@@ -13073,7 +13054,6 @@
             "expression": "SUM(Procurement[Baseline Cost ($)])",
             "formatString": "0",
             "lineageTag": "618fcbc5-fc8d-4932-9d57-0c09e01a4117"
-
           }
         ],
         "partitions": [
