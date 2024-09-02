@@ -12455,6 +12455,29 @@
             "lineageTag": "44102c9c-8543-4db6-9988-f3e95a075620",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "DemandCategory",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(TRUE(),",
+              "   [Lead Time Demand] <= 20, \"Low\",",
+              "   [Lead Time Demand] <= 80, \"Medium\",",
+              "   [Lead Time Demand] > 80, \"High\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "ce6ca400-69f4-4c32-97bc-16913e991581",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "2e59b092-8803-4b85-b33a-d2455cf9648a",
