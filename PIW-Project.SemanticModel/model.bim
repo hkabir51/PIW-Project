@@ -649,6 +649,7 @@
                   }
                 ]
               },
+
               "inventory.lead_time_demand": {
                 "Definition": {
                   "Binding": {
@@ -777,6 +778,7 @@
                   }
                 ]
               },
+
               "inventory.number_of_returned_items": {
                 "Definition": {
                   "Binding": {
@@ -2718,6 +2720,8 @@
                     }
                   },
                   {
+
+
                     "organization": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -3948,6 +3952,16 @@
                       "Type": "Noun",
                       "Weight": 0.582
                     }
+                  },
+                  {
+                    "Total Items Received": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -5020,124 +5034,152 @@
                   "day"
                 ]
               },
+
               "v_Measure_measure.baseline_cost": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
                     "ConceptualProperty": "Baseline Cost"
+
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
+
                     "baseline cost": {
+
                       "State": "Generated"
                     }
                   },
                   {
+
                     "cost": {
+
                       "State": "Generated",
                       "Weight": 0.97
                     }
                   },
                   {
+
                     "baseline price": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline charge": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline rate": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline fee": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline total": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "price": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.476
                     }
                   },
                   {
                     "charge": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.476
                     }
                   },
                   {
                     "fee": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.476
                     }
                   },
                   {
                     "baseline expenditure": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.475
                     }
                   },
                   {
                     "expenditure": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.466
+
                     }
                   }
                 ]
@@ -9311,6 +9353,7 @@
                 },
                 "State": "Generated"
               },
+
               "inventory_has_lead_time_demand": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -9344,6 +9387,7 @@
                 },
                 "State": "Generated"
               },
+
               "inventory_has_number_of_returned_items": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -12928,6 +12972,7 @@
           },
           {
             "name": "DemandCategory",
+
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -12951,6 +12996,7 @@
           },
           {
             "name": "Lead time Status",
+
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -12960,6 +13006,7 @@
             "dataType": "string",
             "expression": [
               "",
+
               "SWITCH(",
               "    TRUE(),",
               "    Inventory[Lead Time Demand] <= 40 , \"Low Lead Time\",",
@@ -12971,6 +13018,7 @@
             ],
             "isDataTypeInferred": true,
             "lineageTag": "5088280a-e2f6-47ca-a1c0-c8861a0a4690",
+
             "summarizeBy": "none",
             "type": "calculated"
           }
