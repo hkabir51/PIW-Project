@@ -520,6 +520,135 @@
                   "$"
                 ]
               },
+              "inventory.demand_category": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory",
+                    "ConceptualProperty": "DemandCategory"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "demand category": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "DemandCategory": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "category": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "demand classification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "classification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "demand class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "demand group": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "demand type": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "demand grouping": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "demand kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "type": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "grouping": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
               "inventory.lead_time_demand": {
                 "Definition": {
                   "Binding": {
@@ -1450,16 +1579,6 @@
                   {
                     "status": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
                     }
                   },
                   {
@@ -2721,6 +2840,7 @@
                     }
                   },
                   {
+<<<<<<< Updated upstream
                     "group based on defective item": {
                       "State": "Generated",
                       "Type": "Noun",
@@ -2729,6 +2849,9 @@
                   },
                   {
                     "category based on defective item": {
+=======
+                    "organization": {
+>>>>>>> Stashed changes
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -3376,6 +3499,136 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.748
+                    }
+                  }
+                ]
+              },
+              "procurement.pur_start_of_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Procurement",
+                    "ConceptualProperty": "Pur_Start_of_month"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pur start of month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Pur_Start_of_month": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "pur start of mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "pur twitch of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "pur jump of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "pur jerk of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "pur flinch of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "pur jolt of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "pur shock of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.474
+                    }
+                  },
+                  {
+                    "pur fright of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.474
+                    }
+                  },
+                  {
+                    "pur surprise of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.474
+                    }
+                  },
+                  {
+                    "pur turn of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.474
                     }
                   }
                 ]
@@ -4681,13 +4934,6 @@
                     }
                   },
                   {
-                    "Actual_cost": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
                     "cost": {
                       "State": "Generated",
                       "Weight": 0.97
@@ -4929,6 +5175,128 @@
                 ],
                 "Units": [
                   "day"
+                ]
+              },
+              "v_Measure_measure.baseline_cost": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Baseline Cost"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "baseline cost": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "cost": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "baseline price": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "baseline charge": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "baseline rate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "baseline fee": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "baseline total": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "price": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "charge": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "fee": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "baseline expenditure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "expenditure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  }
                 ]
               },
               "v_Measure_measure.carrying_cost": {
@@ -9037,6 +9405,39 @@
                 },
                 "State": "Generated"
               },
+              "inventory_has_demand_category": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory.demand_category"
+                      },
+                      "Subject": {
+                        "Role": "inventory"
+                      }
+                    },
+                    "ID": "inventories_have_demand_categories",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory": {
+                    "Target": {
+                      "Entity": "inventory"
+                    }
+                  },
+                  "inventory.demand_category": {
+                    "Target": {
+                      "Entity": "inventory.demand_category"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "inventory_has_lead_time_demand": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -9957,7 +10358,7 @@
                         "Role": "procurement"
                       }
                     },
-                    "ID": "baseline_cost_indicates_how_expensive_procurements_are",
+                    "ID": "baseline_cost_indicates_how_expensive_procurements_are1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10268,6 +10669,39 @@
                   "procurement.ontime_delivery_rate": {
                     "Target": {
                       "Entity": "procurement.ontime_delivery_rate"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "procurement_has_pur_start_of_month": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "procurement.pur_start_of_month"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_pur_start_of_month",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "procurement.pur_start_of_month": {
+                    "Target": {
+                      "Entity": "procurement.pur_start_of_month"
                     }
                   }
                 },
@@ -11284,6 +11718,66 @@
                 },
                 "State": "Generated"
               },
+              "procurement_is_expensive4": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Adjective": {
+                      "Adjectives": [
+                        {
+                          "expensive": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Antonyms": [
+                        {
+                          "cheap": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Measurement": {
+                        "Role": "v_Measure_measure.baseline_cost"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "baseline_cost_indicates_how_expensive_procurements_are",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.baseline_cost"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_baseline_cost",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.baseline_cost": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.baseline_cost"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "procurement_is_requisitioned_on_purchase_requisition_date": {
                 "Binding": {
                   "ConceptualEntity": "Procurement"
@@ -11683,7 +12177,7 @@
                         "Role": "warehouse"
                       }
                     },
-                    "ID": "warehouses_have_total_correct_orders",
+                    "ID": "warehouses_have_total_correct_orders1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11881,7 +12375,7 @@
                         "Role": "warehouse"
                       }
                     },
-                    "ID": "warehouses_have_total_correct_orders1",
+                    "ID": "warehouses_have_total_correct_orders",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12593,6 +13087,31 @@
             ],
             "isDataTypeInferred": true,
             "lineageTag": "49fc794a-ebac-4eb3-b7ee-fb945a5cf576",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Lead time Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    Inventory[Lead Time Demand] <= 40 , \"Low Lead Time\",",
+              "    Inventory[Lead Time Demand] > 40 && Inventory[Lead Time Demand] <= 80, \"Moderate Lead Time\",",
+              "    Inventory[Lead Time Demand] > 80 && Inventory[Number of Stockouts] <= 120, \"High Lead Time\",",
+              "    Inventory[Lead Time Demand] > 120, \"Very High Lead Time\",",
+              "    \"Unknown\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "5088280a-e2f6-47ca-a1c0-c8861a0a4690",
             "summarizeBy": "none",
             "type": "calculated"
           }
