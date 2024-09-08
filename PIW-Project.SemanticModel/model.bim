@@ -524,8 +524,6 @@
                   "$"
                 ]
               },
-<<<<<<< Updated upstream
-=======
               "inventory.demand_category": {
                 "Definition": {
                   "Binding": {
@@ -655,7 +653,6 @@
                   }
                 ]
               },
->>>>>>> Stashed changes
               "inventory.lead_time_demand": {
                 "Definition": {
                   "Binding": {
@@ -784,8 +781,6 @@
                   }
                 ]
               },
-<<<<<<< Updated upstream
-=======
               "inventory.lead_time_status": {
                 "Definition": {
                   "Binding": {
@@ -908,7 +903,6 @@
                   }
                 ]
               },
->>>>>>> Stashed changes
               "inventory.number_of_returned_items": {
                 "Definition": {
                   "Binding": {
@@ -1589,16 +1583,6 @@
                   {
                     "status": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
                     }
                   },
                   {
@@ -2860,19 +2844,6 @@
                     }
                   },
                   {
-<<<<<<< Updated upstream
-                    "category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-=======
->>>>>>> Stashed changes
                     "organization": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -4940,8 +4911,6 @@
                       "Type": "Noun",
                       "Weight": 0.482
                     }
-<<<<<<< Updated upstream
-=======
                   },
                   {
                     "COGS/SqFt": {
@@ -4952,7 +4921,6 @@
                       "State": "Suggested",
                       "Weight": 0.9
                     }
->>>>>>> Stashed changes
                   }
                 ]
               },
@@ -5076,8 +5044,6 @@
                       "Type": "Noun",
                       "Weight": 0.514
                     }
-<<<<<<< Updated upstream
-=======
                   },
                   {
                     "COGS/Ordr Item": {
@@ -5110,7 +5076,6 @@
                       "State": "Generated",
                       "Weight": 0.75
                     }
->>>>>>> Stashed changes
                   }
                 ]
               },
@@ -5884,8 +5849,6 @@
                   }
                 ]
               },
-<<<<<<< Updated upstream
-=======
               "v_Measure_measure.backorder_rate_target": {
                 "Definition": {
                   "Binding": {
@@ -6011,7 +5974,6 @@
                   }
                 ]
               },
->>>>>>> Stashed changes
               "v_Measure_measure.baseline_cost": {
                 "Definition": {
                   "Binding": {
@@ -7337,141 +7299,6 @@
                   }
                 ]
               },
-              "v_Measure_measure.inventory_turnover_ratio": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Inventory_Turnover_Ratio"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "inventory turnover ratio": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Inventory_Turnover_Ratio": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "ratio": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "turnover ratio": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "inventory turnover relation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "inventory turnover percentage": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "inventory turnover quotient": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "inventory turnover relationship": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "turnover relation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "turnover percentage": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "turnover quotient": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "turnover relationship": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "inventory turnover proportion": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "inventory turnover share": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  }
-                ]
-              },
               "v_Measure_measure.last_motnh_cost_saving": {
                 "Definition": {
                   "Binding": {
@@ -7717,8 +7544,6 @@
                   }
                 ]
               },
-<<<<<<< Updated upstream
-=======
               "v_Measure_measure.max_backorder": {
                 "Definition": {
                   "Binding": {
@@ -7797,7 +7622,6 @@
                   }
                 ]
               },
->>>>>>> Stashed changes
               "v_Measure_measure.number_of_accurate_orders": {
                 "Definition": {
                   "Binding": {
@@ -8305,8 +8129,6 @@
                   }
                 ]
               },
-<<<<<<< Updated upstream
-=======
               "v_Measure_measure.order_processing_efficiency": {
                 "Definition": {
                   "Binding": {
@@ -8442,7 +8264,6 @@
                   }
                 ]
               },
->>>>>>> Stashed changes
               "v_Measure_measure.picking_accuracy": {
                 "Definition": {
                   "Binding": {
@@ -10168,8 +9989,6 @@
                   }
                 ]
               },
-<<<<<<< Updated upstream
-=======
               "v_Measure_measure.total_pick": {
                 "Definition": {
                   "Binding": {
@@ -10557,7 +10376,6 @@
                   }
                 ]
               },
->>>>>>> Stashed changes
               "v_Measure_measure.warehouse_highest_storage_utilization": {
                 "Definition": {
                   "Binding": {
@@ -12645,8 +12463,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "inventory_has_demand_category": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -12680,7 +12496,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "inventory_has_lead_time_demand": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -12714,8 +12529,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "inventory_has_lead_time_status": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -12749,7 +12562,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "inventory_has_number_of_returned_items": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -15851,8 +15663,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "warehouse_has_v_Measure_measure_Days_of_Inventory_on_Hand_DOH": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -15919,7 +15729,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "warehouse_has_v_Measure_measure_average_inventory": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -15986,8 +15795,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "warehouse_has_v_Measure_measure_correct_order_percentage_per_day": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16054,7 +15861,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "warehouse_has_v_Measure_measure_highest_storage_utilization": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16088,42 +15894,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-              "warehouse_has_v_Measure_measure_inventory_turnover_ratio": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.inventory_turnover_ratio"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_inventory_turnover_ratio",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.inventory_turnover_ratio": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.inventory_turnover_ratio"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-=======
->>>>>>> Stashed changes
               "warehouse_has_v_Measure_measure_lowest_storage_utilization": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16190,8 +15960,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "warehouse_has_v_Measure_measure_order_processing_efficiency": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16225,7 +15993,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "warehouse_has_v_Measure_measure_picking_accuracy": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16259,8 +16026,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "warehouse_has_v_Measure_measure_stock_turnover_ratio": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16294,7 +16059,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "warehouse_has_v_Measure_measure_storage_utilization": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16328,8 +16092,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "warehouse_has_v_Measure_measure_total_COGS": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16363,7 +16125,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "warehouse_has_v_Measure_measure_total_correct_orders": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16430,8 +16191,6 @@
                 },
                 "State": "Generated"
               },
-<<<<<<< Updated upstream
-=======
               "warehouse_has_v_Measure_measure_total_pick": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16531,7 +16290,6 @@
                 },
                 "State": "Generated"
               },
->>>>>>> Stashed changes
               "warehouse_has_v_Measure_measure_warehouse_highest_storage_utilization": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -17326,8 +17084,6 @@
             "lineageTag": "44102c9c-8543-4db6-9988-f3e95a075620",
             "summarizeBy": "none",
             "type": "calculated"
-<<<<<<< Updated upstream
-=======
           },
           {
             "name": "DemandCategory",
@@ -17376,7 +17132,6 @@
             "lineageTag": "5088280a-e2f6-47ca-a1c0-c8861a0a4690",
             "summarizeBy": "none",
             "type": "calculated"
->>>>>>> Stashed changes
           }
         ],
         "lineageTag": "2e59b092-8803-4b85-b33a-d2455cf9648a",
@@ -17618,11 +17373,7 @@
               }
             ],
             "dataType": "string",
-<<<<<<< Updated upstream
-            "lineageTag": "cfe5bf45-d47e-4992-a731-53c31d17eb93",
-=======
             "lineageTag": "75ed2722-c48d-47d7-b884-b52e9c002f48",
->>>>>>> Stashed changes
             "sourceColumn": "Warehouse Catagory",
             "summarizeBy": "none"
           },
@@ -17635,11 +17386,7 @@
               }
             ],
             "dataType": "string",
-<<<<<<< Updated upstream
-            "lineageTag": "de2f648b-ac6c-43c5-b277-7fb2b9bd754d",
-=======
             "lineageTag": "e256466d-55ce-4493-a3f9-7c3a26b85456",
->>>>>>> Stashed changes
             "sourceColumn": "Storage_Quality",
             "summarizeBy": "none"
           }
@@ -17656,20 +17403,10 @@
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"WareHouse ID\", type text}, {\"COGS ($)\", Int64.Type}, {\"Beginning Inventory ($)\", Int64.Type}, {\"Ending Inventory ($)\", Int64.Type}, {\"Total Correct Orders\", Int64.Type}, {\"Total Orders\", Int64.Type}, {\"Used Storage Space (sq ft)\", Int64.Type}, {\"Total Storage Space (sq ft)\", Int64.Type}, {\"Daily Storage Utilization (%)\", type number}, {\"Number of Days\", Int64.Type}, {\"Number of Correct Picks\", Int64.Type}, {\"Total Number of Picks\", Int64.Type}, {\"Number of Backordered Items\", Int64.Type}, {\"Total Number of Ordered Items\", Int64.Type}, {\"\", type text}, {\"_1\", type text}}),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"\", \"_1\"}),",
-<<<<<<< Updated upstream
-                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Removed Columns\", \"Warehouse Catagory\", each if [#\"Total Storage Space (sq ft)\"] < 1200 then \"Small\" else if [#\"Total Storage Space (sq ft)\"] < 3000 then \"Medium\" else if [#\"Total Storage Space (sq ft)\"] < 4500 then \"Large\" else \"Big\"),",
-                "    #\"Added Custom\" = Table.AddColumn(#\"Added Conditional Column\", \"Item Average\", each [Total Orders]/[Total Number of Ordered Items]),",
-                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Added Custom\",{{\"Warehouse Catagory\", type text}}),",
-                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Changed Type1\",{\"Item Average\"}),",
-                "    #\"Added Conditional Column1\" = Table.AddColumn(#\"Removed Columns1\", \"Storage_Quality\", each if [#\"Daily Storage Utilization (%)\"] >= 90 then \"Overloaded\" else if [#\"Daily Storage Utilization (%)\"] >= 70 then \"Efficient\" else if [#\"Daily Storage Utilization (%)\"] >= 50 then \"Balanced\" else \"Underutilized\")",
-                "in",
-                "    #\"Added Conditional Column1\""
-=======
                 "    #\"Catagory Define\" = Table.AddColumn(#\"Removed Columns\", \"Warehouse Catagory\", each if [#\"Total Storage Space (sq ft)\"] < 1200 then \"Small\" else if [#\"Total Storage Space (sq ft)\"] < 3000 then \"Medium\" else if [#\"Total Storage Space (sq ft)\"] < 4500 then \"Large\" else \"Big\"),",
                 "    #\"Storage Quality Define\" = Table.AddColumn(#\"Catagory Define\", \"Storage_Quality\", each if [#\"Daily Storage Utilization (%)\"] >= 90 then \"Overloaded\" else if [#\"Daily Storage Utilization (%)\"] >= 70 then \"Efficient\" else if [#\"Daily Storage Utilization (%)\"] >= 50 then \"Balanced\" else \"Underutilized\")",
                 "in",
                 "    #\"Storage Quality Define\""
->>>>>>> Stashed changes
               ],
               "type": "m"
             }
@@ -18021,8 +17758,6 @@
             "lineageTag": "618fcbc5-fc8d-4932-9d57-0c09e01a4117"
           },
           {
-<<<<<<< Updated upstream
-=======
             "name": "Total_correct_orders",
             "displayFolder": "Wirehouse",
             "expression": "SUM(Warehouse[Total Correct Orders])",
@@ -18030,7 +17765,6 @@
             "lineageTag": "7951ada3-749c-479c-b276-528aa449c8f6"
           },
           {
->>>>>>> Stashed changes
             "name": "Average_Inventory",
             "annotations": [
               {
@@ -18045,11 +17779,7 @@
               "",
               ""
             ],
-<<<<<<< Updated upstream
-            "lineageTag": "23be13e4-01b5-45d1-8d3c-c9de09e9cf68"
-=======
             "lineageTag": "ce34bec0-6a32-4ce8-8f45-ae4b617b3164"
->>>>>>> Stashed changes
           },
           {
             "name": "Backorder_Rate",
@@ -18061,177 +17791,7 @@
               ""
             ],
             "formatString": "0%;-0%;0%",
-<<<<<<< Updated upstream
-            "lineageTag": "4922ec9f-90e7-48c4-bd1d-66881fcc0162"
-          },
-          {
-            "name": "COGS_Backorder_Impact",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "[COGS_Per_Order] * SUM('Warehouse'[Number of Backordered Items])",
-              ""
-            ],
-            "lineageTag": "34bbb6c4-f36f-4248-975a-349a342ee1d1"
-          },
-          {
-            "name": "COGS_Per_Order",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "DIVIDE(SUM('Warehouse'[COGS ($)]), SUM('Warehouse'[Total Orders]))",
-              ""
-            ],
-            "lineageTag": "f596a9ca-9eb8-4048-840e-112778958964"
-          },
-          {
-            "name": "COGS_Per_Ordered_Item",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "DIVIDE(SUM('Warehouse'[COGS ($)]), SUM('Warehouse'[Total Number of Ordered Items]))",
-              ""
-            ],
-            "lineageTag": "c6ce5e73-fea2-4303-a226-d9bccd79f7fd"
-          },
-          {
-            "name": "Highest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "MAX('Warehouse'[Daily Storage Utilization (%)])",
-              ""
-            ],
-            "lineageTag": "6ca89438-7883-4658-bc07-df62d0d04602"
-          },
-          {
-            "name": "Inventory_Turnover_Ratio",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "displayFolder": "Wirehouse",
-            "expression": "DIVIDE(SUM('Warehouse'[COGS ($)]), [Average_Inventory])",
-            "lineageTag": "1d670ef6-46a7-4a26-b775-8b725d475fd9"
-          },
-          {
-            "name": "Lowest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "MIN(Warehouse[Daily Storage Utilization (%)])",
-              ""
-            ],
-            "lineageTag": "769579ae-ef66-4645-bd8c-c637d679ad47"
-          },
-          {
-            "name": "Order_Accuracy",
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "DIVIDE(SUM('Warehouse'[Total Correct Orders]), SUM('Warehouse'[Total Orders]), 0)",
-              ""
-            ],
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "3ce978b4-a071-4d56-a59e-40b2be33817f"
-          },
-          {
-            "name": "Picking_Accuracy",
-            "displayFolder": "Wirehouse",
-            "expression": "DIVIDE(SUM(Warehouse[Number of Correct Picks]), SUM(Warehouse[Total Number of Picks]), 0) ",
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "e6aa2c2f-84db-403d-a69e-98bd9c5cdf8c"
-          },
-          {
-            "name": "Storage_Utilization",
-            "displayFolder": "Wirehouse",
-            "expression": "DIVIDE(SUM(Warehouse[Used Storage Space (sq ft)]),SUM(Warehouse[Total Storage Space (sq ft)]),0)",
-            "formatString": "0.00%;-0.00%;0.00%",
-            "lineageTag": "1d90bac4-3d3b-42e4-9ca6-87719f386a4e"
-          },
-          {
-            "name": "Total_correct_orders",
-            "displayFolder": "Wirehouse",
-            "expression": "SUM(Warehouse[Total Correct Orders])",
-            "formatString": "0.0",
-            "lineageTag": "7fc88d01-b20c-4791-ae4b-0a7aee282013"
-          },
-          {
-            "name": "Total_Inventory_Movement",
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "SUM('Warehouse'[Ending Inventory ($)]) - SUM(Warehouse[Beginning Inventory ($)])",
-              ""
-            ],
-            "formatString": "0",
-            "lineageTag": "2064fb4f-7af7-495d-b986-920619666161"
-          },
-          {
-            "name": "Warehouse_HighestStorage_Utilization",
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "",
-              "CALCULATE(",
-              "    MAX('Warehouse'[WareHouse ID]),",
-              "    FILTER('Warehouse', 'Warehouse'[Daily Storage Utilization (%)]= [Highest_Storage_Utilization])",
-              ")",
-              ""
-            ],
-            "lineageTag": "91195815-8477-4df9-8959-7827118cde24"
-          },
-          {
-            "name": "Warehouse_Lowest_StorageUtilization",
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "",
-              "CALCULATE(",
-              "   MIN('Warehouse'[WareHouse ID]),",
-              "    FILTER('Warehouse', 'Warehouse'[Daily Storage Utilization (%)]= [Lowest_Storage_Utilization]))"
-            ],
-            "lineageTag": "8d1f6f40-be2a-4b57-918b-421b1aa31b81"
-          },
-          {
-            "name": "Totall_Order",
-            "displayFolder": "Wirehouse",
-            "expression": "SUM(Warehouse[Total Orders])",
-            "formatString": "0",
-            "lineageTag": "6e4d01c6-67aa-4803-9060-9e7aa6a452aa"
-          },
-          {
-            "name": "Total_Pick",
-            "displayFolder": "Wirehouse",
-            "expression": "SUM(Warehouse[Total Number of Picks])",
-            "formatString": "0",
-            "lineageTag": "d82c1668-2215-4fb2-9fe9-6ee3c2e9bbe0"
-=======
             "lineageTag": "dcb2807a-d1c6-42ce-8462-0429c894b3c4"
->>>>>>> Stashed changes
           },
           {
             "name": "Backorder_Rate_Target",
@@ -18246,19 +17806,6 @@
               "0.03 // Set this to your desired target rate",
               ""
             ],
-<<<<<<< Updated upstream
-            "lineageTag": "fd98eb93-4079-43e4-a209-78fab0eab644"
-          },
-          {
-            "name": "Min_Backorder",
-            "displayFolder": "Wirehouse",
-            "expression": [
-              "0 // Set this to your desired target rate",
-              ""
-            ],
-            "formatString": "0%;-0%;0%",
-            "lineageTag": "96dfe9f3-e6c1-4fb7-b3e1-0c32279f610c"
-=======
             "lineageTag": "aec62549-a06a-42fa-85a7-ed95e8c11468"
           },
           {
@@ -18308,17 +17855,12 @@
           },
           {
             "name": "Highest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
-              "MAX('Warehouse'[Daily Storage Utilization (%)])",
+              "MAX('Warehouse'[Daily Storage Utilization (%)])/100",
               ""
             ],
+            "formatString": "0%;-0%;0%",
             "lineageTag": "a55459d4-7912-4bd4-930b-215aabf51b04"
           },
           {
@@ -18343,19 +17885,10 @@
           },
           {
             "name": "Lowest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
-            "expression": [
-              "MIN(Warehouse[Daily Storage Utilization (%)])",
-              ""
-            ],
+            "expression": "MIN(Warehouse[Daily Storage Utilization (%)])/100",
+            "formatString": "0%;-0%;0%",
             "lineageTag": "efa8bdbe-b6c9-47ed-aa02-8ff381f1c456"
->>>>>>> Stashed changes
           },
           {
             "name": "Max_Backorder",
@@ -18370,16 +17903,6 @@
               "0.05 // Set this to your desired target rate",
               ""
             ],
-<<<<<<< Updated upstream
-            "lineageTag": "e1ccfbda-b18b-4aef-9408-c8e9188fa38b"
-          },
-          {
-            "name": "Total_WareHouse",
-            "displayFolder": "Wirehouse",
-            "expression": "DISTINCTCOUNT(Warehouse[WareHouse ID])",
-            "formatString": "0",
-            "lineageTag": "426262b2-7ac5-4ea7-9d0d-7baf501faeff"
-=======
             "lineageTag": "0da2472e-b1ef-47c4-9019-419b7e18a51e"
           },
           {
@@ -18415,16 +17938,12 @@
             "expression": "DIVIDE(SUM(Warehouse[Used Storage Space (sq ft)]),SUM(Warehouse[Total Storage Space (sq ft)]),0)",
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "7b0e99de-97cf-46eb-b831-05f71b8ca98a"
->>>>>>> Stashed changes
           },
           {
             "name": "Total_COGS",
             "displayFolder": "Wirehouse",
             "expression": "SUM(Warehouse[COGS ($)])",
             "formatString": "0",
-<<<<<<< Updated upstream
-            "lineageTag": "0752655e-62e3-47a9-9d20-735b9ef67d88"
-=======
             "lineageTag": "d8e4fc4e-f956-4dc6-887e-35f2a7bf9351"
           },
           {
@@ -18443,16 +17962,12 @@
             "expression": "SUM(Warehouse[Total Number of Picks])",
             "formatString": "0",
             "lineageTag": "826fce5e-bf98-46e7-b9ee-17781106a337"
->>>>>>> Stashed changes
           },
           {
             "name": "Total_Storage (SqFt)",
             "displayFolder": "Wirehouse",
             "expression": "SUM(Warehouse[Total Storage Space (sq ft)])",
             "formatString": "0",
-<<<<<<< Updated upstream
-            "lineageTag": "8e1777d6-7f95-4778-95a8-3700f871322d"
-=======
             "lineageTag": "66ce4905-215d-4494-a966-d1e30d2a6424"
           },
           {
@@ -18475,7 +17990,7 @@
             "expression": [
               "",
               "CALCULATE(",
-              "    MAX('Warehouse'[WareHouse ID]),",
+              "    MAX('Warehouse'[WareHouse ID]),h",
               "    FILTER('Warehouse', 'Warehouse'[Daily Storage Utilization (%)]= [Highest_Storage_Utilization])",
               ")",
               ""
@@ -18568,7 +18083,6 @@
               ""
             ],
             "lineageTag": "279e0e53-bf08-4d68-86ca-939f35fca067"
->>>>>>> Stashed changes
           }
         ],
         "partitions": [
