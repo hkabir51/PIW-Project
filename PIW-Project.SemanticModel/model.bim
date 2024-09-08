@@ -8641,7 +8641,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Stock_Turnover_Ratio"
+                    "ConceptualProperty": "Turnover_Ratio"
                   }
                 },
                 "State": "Generated",
@@ -17864,7 +17864,7 @@
             "lineageTag": "a55459d4-7912-4bd4-930b-215aabf51b04"
           },
           {
-            "name": "Stock_Turnover_Ratio",
+            "name": "Turnover_Ratio",
             "displayFolder": "Wirehouse",
             "expression": [
               "",
