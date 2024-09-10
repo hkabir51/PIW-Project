@@ -8641,7 +8641,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Turnover_Ratio"
+                    "ConceptualProperty": "Stock_Turnover_Ratio"
                   }
                 },
                 "State": "Generated",
@@ -17431,6 +17431,13 @@
             "lineageTag": "75a61099-3cac-4380-adbf-667b18e46e2b"
           },
           {
+            "name": "Total_correct_orders",
+            "displayFolder": "Wirehouse",
+            "expression": "SUM(Warehouse[Total Correct Orders])",
+            "formatString": "0",
+            "lineageTag": "7951ada3-749c-479c-b276-528aa449c8f6"
+          },
+          {
             "name": "COGS",
             "displayFolder": "Inventory",
             "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
@@ -17758,13 +17765,6 @@
             "lineageTag": "618fcbc5-fc8d-4932-9d57-0c09e01a4117"
           },
           {
-            "name": "Total_correct_orders",
-            "displayFolder": "Wirehouse",
-            "expression": "SUM(Warehouse[Total Correct Orders])",
-            "formatString": "0",
-            "lineageTag": "7951ada3-749c-479c-b276-528aa449c8f6"
-          },
-          {
             "name": "Average_Inventory",
             "annotations": [
               {
@@ -17864,7 +17864,7 @@
             "lineageTag": "a55459d4-7912-4bd4-930b-215aabf51b04"
           },
           {
-            "name": "Turnover_Ratio",
+            "name": "Stock_Turnover_Ratio",
             "displayFolder": "Wirehouse",
             "expression": [
               "",
@@ -17886,7 +17886,10 @@
           {
             "name": "Lowest_Storage_Utilization",
             "displayFolder": "Wirehouse",
-            "expression": "MIN(Warehouse[Daily Storage Utilization (%)])/100",
+            "expression": [
+              "MIN(Warehouse[Daily Storage Utilization (%)])/100",
+              ""
+            ],
             "formatString": "0%;-0%;0%",
             "lineageTag": "efa8bdbe-b6c9-47ed-aa02-8ff381f1c456"
           },
@@ -17990,7 +17993,7 @@
             "expression": [
               "",
               "CALCULATE(",
-              "    MAX('Warehouse'[WareHouse ID]),h",
+              "    MAX('Warehouse'[WareHouse ID]),",
               "    FILTER('Warehouse', 'Warehouse'[Daily Storage Utilization (%)]= [Highest_Storage_Utilization])",
               ")",
               ""
