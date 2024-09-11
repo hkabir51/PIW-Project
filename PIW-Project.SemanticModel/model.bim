@@ -17855,17 +17855,12 @@
           },
           {
             "name": "Highest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
-              "MAX('Warehouse'[Daily Storage Utilization (%)])",
+              "MAX('Warehouse'[Daily Storage Utilization (%)])/100",
               ""
             ],
+            "formatString": "0%;-0%;0%",
             "lineageTag": "a55459d4-7912-4bd4-930b-215aabf51b04"
           },
           {
@@ -17890,17 +17885,12 @@
           },
           {
             "name": "Lowest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
-              "MIN(Warehouse[Daily Storage Utilization (%)])",
+              "MIN(Warehouse[Daily Storage Utilization (%)])/100",
               ""
             ],
+            "formatString": "0%;-0%;0%",
             "lineageTag": "efa8bdbe-b6c9-47ed-aa02-8ff381f1c456"
           },
           {
@@ -18096,6 +18086,56 @@
               ""
             ],
             "lineageTag": "279e0e53-bf08-4d68-86ca-939f35fca067"
+          },
+          {
+            "name": "GaugeColorBackorder",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    [Backorder_Rate] < .03, \"Green\",  // For rates less than 3",
+              "    [Backorder_Rate] >= .03 && [Backorder_Rate] < .04, \"Orange\",  // For rates between 3 and ",
+              "    \"Red\"  // for above 5",
+              ")",
+              "",
+              ""
+            ],
+            "lineageTag": "23310d9b-6e1a-4690-8728-dbb830abfe60"
+          },
+          {
+            "name": "OrderAccuracyColor",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    [Order_Accuracy] < .50, \"Red\",    // For accuracy less than 50",
+              "    [Order_Accuracy] >= .50 && [Order_Accuracy] < .66, \"Yellow\",  // For accuracy between 50 and 65",
+              "    [Order_Accuracy] >= .66 && [Order_Accuracy] < .85, \"Light Green\",  // For accuracy between 66 and 84",
+              "    [Order_Accuracy] >= .85, \"Green\",  // For accuracy 85 and above",
+              "    \"Gray\"  // Default case if none of the above is met",
+              ")",
+              ""
+            ],
+            "lineageTag": "58000b60-5ab3-4ae6-85d4-b6318506f1f2"
+          },
+          {
+            "name": "PickingAccuracyColor",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    [Picking_Accuracy] < .50, \"Red\",    // For accuracy less than 50",
+              "    [Picking_Accuracy] >= .50 && [Picking_Accuracy] < .66, \"Yellow\",  // For accuracy between 50 and 65",
+              "    [Picking_Accuracy] >= .66 && [Picking_Accuracy] < .85, \"Light Green\",  // For accuracy between 66 and 84",
+              "    [Picking_Accuracy] >= .85, \"Green\",  // For accuracy 85 and above",
+              "    \"Gray\"  // Default case if none of the above is met",
+              ")",
+              ""
+            ],
+            "lineageTag": "b8a78fbd-52ce-4ad6-9d59-f7ddce610f9d"
           }
         ],
         "partitions": [
