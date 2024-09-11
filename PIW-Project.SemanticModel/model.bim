@@ -17,10 +17,6 @@
       {
         "name": "PBI_ProTooling",
         "value": "[\"DevMode\",\"DaxQueryView_Desktop\"]"
-      },
-      {
-        "name": "__TEdtr",
-        "value": "1"
       }
     ],
     "culture": "en-US",
@@ -653,6 +649,7 @@
                   }
                 ]
               },
+
               "inventory.lead_time_demand": {
                 "Definition": {
                   "Binding": {
@@ -781,128 +778,7 @@
                   }
                 ]
               },
-              "inventory.lead_time_status": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Inventory",
-                    "ConceptualProperty": "Lead time Status"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "lead time status": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "time status": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "lead time category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "lead time importance": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "lead time prestige": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "lead time prominence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "time category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "time importance": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "time prestige": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "time prominence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "lead time condition": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "lead time class": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  }
-                ]
-              },
+
               "inventory.number_of_returned_items": {
                 "Definition": {
                   "Binding": {
@@ -2844,6 +2720,8 @@
                     }
                   },
                   {
+
+
                     "organization": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -4074,6 +3952,16 @@
                       "Type": "Noun",
                       "Weight": 0.582
                     }
+                  },
+                  {
+                    "Total Items Received": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -4650,435 +4538,6 @@
                   }
                 ]
               },
-              "v_Measure_measure.COGS_backorder_impact": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "COGS_Backorder_Impact"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "COGS backorder impact": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "COGS_Backorder_Impact": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "impact": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "backorder impact": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "cog backorder impression": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "backorder impression": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "cog backorder influence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "cog backorder effect": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "cog backorder bearing": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "cog backorder power": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "cog backorder control": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "cog backorder sway": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "impression": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "backorder influence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.COGS_per_order": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "COGS_Per_Order"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "COGS per order": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "COGS_Per_Order": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "COGS": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "mechanism per order": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "device per order": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "workings per order": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "works per order": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "mechanism": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "device": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "workings": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "cogwheel per order": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.482
-                    }
-                  },
-                  {
-                    "gearwheel per order": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.482
-                    }
-                  },
-                  {
-                    "flywheel per order": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.482
-                    }
-                  },
-                  {
-                    "COGS/SqFt": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.COGS_per_ordered_item": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "COGS_Per_Ordered_Item"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "COGS per ordered item": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "COGS_Per_Ordered_Item": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "cog per ordered product": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "cog per ordered element": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "cog per ordered entry": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "cog per ordered article": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "cog per ordered object": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "cog per ordered piece": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "cog per ordered token": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "mechanism per ordered item": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "device per ordered item": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "workings per ordered item": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "COGS/Ordr Item": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.Days_of_Inventory_on_Hand_DOH": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Days_of_Inventory_on_Hand (DOH)"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Days_of_Inventory_on_Hand (DOH)": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Days_of_Inventory_on_Hand": {
-                      "State": "Generated",
-                      "Weight": 0.75
-                    }
-                  }
-                ]
-              },
               "v_Measure_measure.PY_cost": {
                 "Definition": {
                   "Binding": {
@@ -5319,28 +4778,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.476
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.Total_Storage_SqFt": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Total_Storage (SqFt)"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Total_Storage (SqFt)": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Total_Storage": {
-                      "State": "Generated",
-                      "Weight": 0.75
                     }
                   }
                 ]
@@ -5597,501 +5034,152 @@
                   "day"
                 ]
               },
-              "v_Measure_measure.average_inventory": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Average_Inventory"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "average inventory": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Average_Inventory": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "average portfolio": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "average list": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average record": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average account": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average register": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average catalogue": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average catalog": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average roster": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average roll": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "average stock": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.461
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.backorder_rate": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Backorder_Rate"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "backorder rate": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Backorder_Rate": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "rate": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "backorder degree": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "backorder frequency": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "backorder percentage": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "backorder ratio": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "backorder quotient": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "degree": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "frequency": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "quotient": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "backorder amount": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "backorder proportion": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.backorder_rate_target": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Backorder_Rate_Target"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "backorder rate target": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Backorder_Rate_Target": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "target": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "rate target": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "backorder rate focus": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "backorder rate goal": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "backorder rate objective": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "rate focus": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "rate goal": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "rate objective": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "focus": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "goal": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "objective": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  }
-                ]
-              },
+
               "v_Measure_measure.baseline_cost": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
                     "ConceptualProperty": "Baseline Cost"
+
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
+
                     "baseline cost": {
+
                       "State": "Generated"
                     }
                   },
                   {
+
                     "cost": {
+
                       "State": "Generated",
                       "Weight": 0.97
                     }
                   },
                   {
+
                     "baseline price": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline charge": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline rate": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline fee": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "baseline total": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.485
                     }
                   },
                   {
                     "price": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.476
                     }
                   },
                   {
                     "charge": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.476
                     }
                   },
                   {
                     "fee": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.476
                     }
                   },
                   {
                     "baseline expenditure": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.475
                     }
                   },
                   {
                     "expenditure": {
+
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
+
                       "Weight": 0.466
+
                     }
                   }
                 ]
@@ -6310,268 +5398,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.476
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.correct_order_percentage_per_day": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Correct_Order_Percentage_per_Day"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "correct order percentage per day": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Correct_Order_Percentage_per_Day": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "order percentage": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "correct order ratio per day": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.52
-                    }
-                  },
-                  {
-                    "correct order measurement per day": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.52
-                    }
-                  },
-                  {
-                    "correct order calculation per day": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.52
-                    }
-                  },
-                  {
-                    "correct order fraction per day": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.504
-                    }
-                  },
-                  {
-                    "correct order proportion per day": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.504
-                    }
-                  },
-                  {
-                    "correct order part per day": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.504
-                    }
-                  },
-                  {
-                    "correct order section per day": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.504
-                    }
-                  },
-                  {
-                    "order ratio": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "order measurement": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "order calculation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.cost_per_sq_ft": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Cost_Per_SqFt"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "cost per sq ft": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Cost_Per_SqFt": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "price per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "charge per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "rate per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "fee per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "total per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "expenditure per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.489
-                    }
-                  },
-                  {
-                    "budget per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.474
-                    }
-                  },
-                  {
-                    "amount per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.474
-                    }
-                  },
-                  {
-                    "outlay per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.474
-                    }
-                  },
-                  {
-                    "expense per sq ft": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.474
-                    }
-                  },
-                  {
-                    "Cost Per SqFt": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -7083,135 +5909,6 @@
                   }
                 ]
               },
-              "v_Measure_measure.highest_storage_utilization": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Highest_Storage_Utilization"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "highest storage utilization": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Highest_Storage_Utilization": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "utilization": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "highest storage operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "highest storage consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "highest storage exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "highest storage deployment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "highest storage use": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "highest storage application": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "highest storage employment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  }
-                ]
-              },
               "v_Measure_measure.inventory_accuracy": {
                 "Definition": {
                   "Binding": {
@@ -7446,213 +6143,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.599
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.lowest_storage_utilization": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Lowest_Storage_Utilization"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "lowest storage utilization": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Lowest_Storage_Utilization": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "utilization": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "lowest storage operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "lowest storage consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "lowest storage exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "lowest storage deployment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "lowest storage use": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "lowest storage application": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "lowest storage employment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.max_backorder": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Max_Backorder"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "max backorder": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Max_Backorder": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "backorder": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "maximum backorder": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.min_backorder": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Min_Backorder"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "min backorder": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Min_Backorder": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "backorder": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "minimum backorder": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
                     }
                   }
                 ]
@@ -8035,6 +6525,7 @@
                   }
                 ]
               },
+
               "v_Measure_measure.order_accuracy": {
                 "Definition": {
                   "Binding": {
@@ -8698,6 +7189,7 @@
                   }
                 ]
               },
+
               "v_Measure_measure.rate_of_return": {
                 "Definition": {
                   "Binding": {
@@ -8942,141 +7434,6 @@
                   }
                 ]
               },
-              "v_Measure_measure.stock_turnover_ratio": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Stock_Turnover_Ratio"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "stock turnover ratio": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Stock_Turnover_Ratio": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "ratio": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "turnover ratio": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "inventory turnover ratio": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "stock turnover relation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "stock turnover percentage": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "stock turnover quotient": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "stock turnover relationship": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "turnover relation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "turnover percentage": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "turnover quotient": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "turnover relationship": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "stock turnover proportion": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  }
-                ]
-              },
               "v_Measure_measure.stockout_rate": {
                 "Definition": {
                   "Binding": {
@@ -9183,135 +7540,6 @@
                   },
                   {
                     "stockout scale": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.storage_utilization": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Storage_Utilization"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "storage utilization": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Storage_Utilization": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "utilization": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "storage operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "storage consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "storage exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "storage deployment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "deployment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "storage use": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "storage application": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -9546,135 +7774,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.52
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.total_COGS": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Total_COGS"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "total COGS": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Total_COGS": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "COGS": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "aggregate cog": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "overall cog": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "total mechanism": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "total device": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "total workings": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "mechanism": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "device": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "workings": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "total works": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "works": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
                     }
                   }
                 ]
@@ -9924,141 +8023,6 @@
                   }
                 ]
               },
-              "v_Measure_measure.total_inventory_movement": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Total_Inventory_Movement"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "total inventory movement": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Total_Inventory_Movement": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "movement": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "inventory movement": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "aggregate inventory movement": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "overall inventory movement": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "total inventory effort": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "inventory effort": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "total inventory drive": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total inventory crusade": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total inventory undertaking": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total inventory program": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total inventory measure": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "effort": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  }
-                ]
-              },
               "v_Measure_measure.total_item_received": {
                 "Definition": {
                   "Binding": {
@@ -10290,579 +8254,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.485
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.total_pick": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Total_Pick"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "total pick": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Total_Pick": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "pick": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "aggregate pick": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "overall pick": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "total preference": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "preference": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "total choice": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "total prize": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "total best": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "total elite": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "choice": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "prize": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.total_ware_house": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Total_WareHouse"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "total ware house": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Total_WareHouse": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "house": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "ware house": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "aggregate ware house": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "overall ware house": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "total ware dynasty": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "ware dynasty": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "total ware household": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total ware family": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total ware community": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total ware line": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "total ware stock": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "dynasty": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.totall_order": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Totall_Order"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "totall order": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Totall_Order": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "totall instruction": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "totall direction": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "totall edict": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "totall command": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "totall directive": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "totall demand": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "totall mandate": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "totall imperative": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "totall stability": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.475
-                    }
-                  },
-                  {
-                    "totall harmony": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.475
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.warehouse_highest_storage_utilization": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Warehouse_HighestStorage_Utilization"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "warehouse highest storage utilization": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Warehouse_HighestStorage_Utilization": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "warehouse highest storage operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse highest storage consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse highest storage exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse highest storage deployment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse highest storage use": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "warehouse highest storage application": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "warehouse highest storage employment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  }
-                ]
-              },
-              "v_Measure_measure.warehouse_lowest_storage_utilization": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Warehouse_Lowest_StorageUtilization"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "warehouse lowest storage utilization": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Warehouse_Lowest_StorageUtilization": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "warehouse lowest storage operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse lowest storage consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse lowest storage exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse lowest storage deployment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "warehouse lowest storage use": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "warehouse lowest storage application": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "warehouse lowest storage employment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
                     }
                   }
                 ]
@@ -11318,6 +8709,12 @@
                     }
                   },
                   {
+                    "storage utilization": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
                     "daily storage operation": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -11358,6 +8755,46 @@
                     }
                   },
                   {
+                    "storage operation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "storage consumption": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "storage exploitation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "storage deployment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
                     "daily storage use": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -11375,46 +8812,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.492
-                    }
-                  },
-                  {
-                    "daily storage employment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "operation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "consumption": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "exploitation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
                     }
                   }
                 ],
@@ -11733,135 +9130,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.739
-                    }
-                  }
-                ]
-              },
-              "warehouse.storage_quality": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Warehouse",
-                    "ConceptualProperty": "Storage_Quality"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "storage quality": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Storage_Quality": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "quality": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "storage excellence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "storage superiority": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "storage eminence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "excellence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "superiority": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "eminence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "storage class": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "storage value": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "storage worth": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "class": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
                     }
                   }
                 ]
@@ -12583,22 +9851,6 @@
                   "square foot",
                   "sq ft"
                 ]
-              },
-              "warehouse.warehouse_catagory": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Warehouse",
-                    "ConceptualProperty": "Warehouse Catagory"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "warehouse catagory": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
               }
             },
             "Language": "en-US",
@@ -12801,6 +10053,7 @@
                 },
                 "State": "Generated"
               },
+
               "inventory_has_lead_time_demand": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -12834,39 +10087,7 @@
                 },
                 "State": "Generated"
               },
-              "inventory_has_lead_time_status": {
-                "Binding": {
-                  "ConceptualEntity": "Inventory"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "inventory.lead_time_status"
-                      },
-                      "Subject": {
-                        "Role": "inventory"
-                      }
-                    },
-                    "ID": "inventories_have_lead_time_statuses",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "inventory": {
-                    "Target": {
-                      "Entity": "inventory"
-                    }
-                  },
-                  "inventory.lead_time_status": {
-                    "Target": {
-                      "Entity": "inventory.lead_time_status"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
+
               "inventory_has_number_of_returned_items": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -14586,66 +11807,6 @@
                 },
                 "State": "Generated"
               },
-              "procurement_has_v_Measure_measure_baseline_cost": {
-                "Binding": {
-                  "ConceptualEntity": "Procurement"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.baseline_cost"
-                      },
-                      "Subject": {
-                        "Role": "procurement"
-                      }
-                    },
-                    "ID": "procurements_have_baseline_cost",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Adjective": {
-                      "Adjectives": [
-                        {
-                          "expensive": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Antonyms": [
-                        {
-                          "cheap": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Measurement": {
-                        "Role": "v_Measure_measure.baseline_cost"
-                      },
-                      "Subject": {
-                        "Role": "procurement"
-                      }
-                    },
-                    "ID": "baseline_cost_indicates_how_expensive_procurements_are",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "procurement": {
-                    "Target": {
-                      "Entity": "procurement"
-                    }
-                  },
-                  "v_Measure_measure.baseline_cost": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.baseline_cost"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "procurement_has_v_Measure_measure_cost_savings": {
                 "Binding": {
                   "ConceptualEntity": "Procurement"
@@ -15141,6 +12302,66 @@
                 },
                 "State": "Generated"
               },
+              "procurement_is_expensive4": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Adjective": {
+                      "Adjectives": [
+                        {
+                          "expensive": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Antonyms": [
+                        {
+                          "cheap": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Measurement": {
+                        "Role": "v_Measure_measure.baseline_cost"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "baseline_cost_indicates_how_expensive_procurements_are",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.baseline_cost"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_baseline_cost",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.baseline_cost": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.baseline_cost"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "procurement_is_requisitioned_on_purchase_requisition_date": {
                 "Binding": {
                   "ConceptualEntity": "Procurement"
@@ -15216,6 +12437,7 @@
                 },
                 "State": "Generated"
               },
+
               "v_Measure_measure_has_backorder_rate_target": {
                 "Binding": {
                   "ConceptualEntity": "_Measure"
@@ -15282,6 +12504,7 @@
                 },
                 "State": "Generated"
               },
+
               "v_Measure_measure_has_guge_maximum": {
                 "Binding": {
                   "ConceptualEntity": "_Measure"
@@ -15315,6 +12538,7 @@
                 },
                 "State": "Generated"
               },
+
               "v_Measure_measure_has_max_backorder": {
                 "Binding": {
                   "ConceptualEntity": "_Measure"
@@ -15447,6 +12671,7 @@
                 },
                 "State": "Generated"
               },
+
               "warehouse_has_WareHouse_ID": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -15724,52 +12949,6 @@
                 },
                 "State": "Generated"
               },
-              "warehouse_has_storage_quality": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "warehouse.storage_quality"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_storage_qualities",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "DynamicAdjective": {
-                      "Adjective": {
-                        "Role": "warehouse.storage_quality"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "storage_qualities_describe_warehouses",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  },
-                  "warehouse.storage_quality": {
-                    "Target": {
-                      "Entity": "warehouse.storage_quality"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "warehouse_has_total_correct_order": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -15784,7 +12963,7 @@
                         "Role": "warehouse"
                       }
                     },
-                    "ID": "warehouses_have_total_correct_orders",
+                    "ID": "warehouses_have_total_correct_orders1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15968,567 +13147,6 @@
                 },
                 "State": "Generated"
               },
-              "warehouse_has_v_Measure_measure_COGS_backorder_impact": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.COGS_backorder_impact"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_COGS_backorder_impact",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.COGS_backorder_impact": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.COGS_backorder_impact"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_COGS_per_order": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.COGS_per_order"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_COGS_per_order",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.COGS_per_order": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.COGS_per_order"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_COGS_per_ordered_item": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.COGS_per_ordered_item"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_COGS_per_ordered_item",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.COGS_per_ordered_item": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.COGS_per_ordered_item"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_Days_of_Inventory_on_Hand_DOH": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.Days_of_Inventory_on_Hand_DOH"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_Days_of_Inventory_on_Hand_DOH",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.Days_of_Inventory_on_Hand_DOH": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.Days_of_Inventory_on_Hand_DOH"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_Total_Storage_SqFt": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.Total_Storage_SqFt"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_Total_Storage_SqFt",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.Total_Storage_SqFt": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.Total_Storage_SqFt"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_average_inventory": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.average_inventory"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_average_inventory",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.average_inventory": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.average_inventory"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_backorder_rate": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.backorder_rate"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_backorder_rate",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.backorder_rate": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.backorder_rate"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_correct_order_percentage_per_day": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.correct_order_percentage_per_day"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_correct_order_percentage_per_day",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.correct_order_percentage_per_day": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.correct_order_percentage_per_day"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_cost_per_sq_ft": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.cost_per_sq_ft"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_cost_per_sq_ft",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.cost_per_sq_ft": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.cost_per_sq_ft"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_highest_storage_utilization": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.highest_storage_utilization"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_highest_storage_utilization",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.highest_storage_utilization": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.highest_storage_utilization"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_lowest_storage_utilization": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.lowest_storage_utilization"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_lowest_storage_utilization",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.lowest_storage_utilization": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.lowest_storage_utilization"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_order_accuracy": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.order_accuracy"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_order_accuracy",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.order_accuracy": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.order_accuracy"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_order_processing_efficiency": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.order_processing_efficiency"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_order_processing_efficiency",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.order_processing_efficiency": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.order_processing_efficiency"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_picking_accuracy": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.picking_accuracy"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_picking_accuracy",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.picking_accuracy": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.picking_accuracy"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_stock_turnover_ratio": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.stock_turnover_ratio"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_stock_turnover_ratio",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.stock_turnover_ratio": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.stock_turnover_ratio"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_storage_utilization": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.storage_utilization"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_storage_utilization",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.storage_utilization": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.storage_utilization"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_total_COGS": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.total_COGS"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_total_COGS",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.total_COGS": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.total_COGS"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "warehouse_has_v_Measure_measure_total_correct_orders": {
                 "Binding": {
                   "ConceptualEntity": "Warehouse"
@@ -16543,7 +13161,7 @@
                         "Role": "warehouse"
                       }
                     },
-                    "ID": "warehouses_have_total_correct_orders1",
+                    "ID": "warehouses_have_total_correct_orders",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16557,237 +13175,6 @@
                   "warehouse": {
                     "Target": {
                       "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_total_inventory_movement": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.total_inventory_movement"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_total_inventory_movement",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.total_inventory_movement": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.total_inventory_movement"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_total_pick": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.total_pick"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_total_pick",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.total_pick": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.total_pick"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_total_ware_house": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.total_ware_house"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_total_ware_house",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.total_ware_house": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.total_ware_house"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_totall_order": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.totall_order"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_totall_order",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.totall_order": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.totall_order"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_warehouse_highest_storage_utilization": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.warehouse_highest_storage_utilization"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_warehouse_highest_storage_utilization",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.warehouse_highest_storage_utilization": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.warehouse_highest_storage_utilization"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_v_Measure_measure_warehouse_lowest_storage_utilization": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_Measure_measure.warehouse_lowest_storage_utilization"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_warehouse_lowest_storage_utilization",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_Measure_measure.warehouse_lowest_storage_utilization": {
-                    "Target": {
-                      "Entity": "v_Measure_measure.warehouse_lowest_storage_utilization"
-                    }
-                  },
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "warehouse_has_warehouse_catagory": {
-                "Binding": {
-                  "ConceptualEntity": "Warehouse"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "warehouse.warehouse_catagory"
-                      },
-                      "Subject": {
-                        "Role": "warehouse"
-                      }
-                    },
-                    "ID": "warehouses_have_warehouse_catagories",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "warehouse": {
-                    "Target": {
-                      "Entity": "warehouse"
-                    }
-                  },
-                  "warehouse.warehouse_catagory": {
-                    "Target": {
-                      "Entity": "warehouse.warehouse_catagory"
                     }
                   }
                 },
@@ -16813,10 +13200,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -17491,6 +13874,7 @@
           },
           {
             "name": "DemandCategory",
+
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -17514,6 +13898,7 @@
           },
           {
             "name": "Lead time Status",
+
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -17523,6 +13908,7 @@
             "dataType": "string",
             "expression": [
               "",
+
               "SWITCH(",
               "    TRUE(),",
               "    Inventory[Lead Time Demand] <= 40 , \"Low Lead Time\",",
@@ -17534,6 +13920,7 @@
             ],
             "isDataTypeInferred": true,
             "lineageTag": "5088280a-e2f6-47ca-a1c0-c8861a0a4690",
+
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -17563,10 +13950,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -17767,32 +14150,6 @@
             "lineageTag": "b55aa2dc-d3c2-476e-8bd6-303e35e2b59e",
             "sourceColumn": "Total Number of Ordered Items",
             "summarizeBy": "sum"
-          },
-          {
-            "name": "Warehouse Catagory",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "75ed2722-c48d-47d7-b884-b52e9c002f48",
-            "sourceColumn": "Warehouse Catagory",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Storage_Quality",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "e256466d-55ce-4493-a3f9-7c3a26b85456",
-            "sourceColumn": "Storage_Quality",
-            "summarizeBy": "none"
           }
         ],
         "lineageTag": "ec8fd5b5-0270-4e7a-8c38-b2a79bb293e4",
@@ -17806,11 +14163,9 @@
                 "    Source = Csv.Document(Web.Contents(\"https://drive.google.com/uc?export=download&id=1sUI4zPXGbWhkV7lIXJRJkt4H8R6ZqNWw\"),[Delimiter=\",\", Columns=16, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"WareHouse ID\", type text}, {\"COGS ($)\", Int64.Type}, {\"Beginning Inventory ($)\", Int64.Type}, {\"Ending Inventory ($)\", Int64.Type}, {\"Total Correct Orders\", Int64.Type}, {\"Total Orders\", Int64.Type}, {\"Used Storage Space (sq ft)\", Int64.Type}, {\"Total Storage Space (sq ft)\", Int64.Type}, {\"Daily Storage Utilization (%)\", type number}, {\"Number of Days\", Int64.Type}, {\"Number of Correct Picks\", Int64.Type}, {\"Total Number of Picks\", Int64.Type}, {\"Number of Backordered Items\", Int64.Type}, {\"Total Number of Ordered Items\", Int64.Type}, {\"\", type text}, {\"_1\", type text}}),",
-                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"\", \"_1\"}),",
-                "    #\"Catagory Define\" = Table.AddColumn(#\"Removed Columns\", \"Warehouse Catagory\", each if [#\"Total Storage Space (sq ft)\"] < 1200 then \"Small\" else if [#\"Total Storage Space (sq ft)\"] < 3000 then \"Medium\" else if [#\"Total Storage Space (sq ft)\"] < 4500 then \"Large\" else \"Big\"),",
-                "    #\"Storage Quality Define\" = Table.AddColumn(#\"Catagory Define\", \"Storage_Quality\", each if [#\"Daily Storage Utilization (%)\"] >= 90 then \"Overloaded\" else if [#\"Daily Storage Utilization (%)\"] >= 70 then \"Efficient\" else if [#\"Daily Storage Utilization (%)\"] >= 50 then \"Balanced\" else \"Underutilized\")",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"\", \"_1\"})",
                 "in",
-                "    #\"Storage Quality Define\""
+                "    #\"Removed Columns\""
               ],
               "type": "m"
             }
@@ -18148,6 +14503,7 @@
             "expression": "SUM(Procurement[Baseline Cost ($)])",
             "formatString": "0",
             "lineageTag": "618fcbc5-fc8d-4932-9d57-0c09e01a4117"
+
           },
           {
             "name": "Average_Inventory",
@@ -18225,17 +14581,12 @@
           },
           {
             "name": "Highest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
-              "MAX('Warehouse'[Daily Storage Utilization (%)])",
+              "MAX('Warehouse'[Daily Storage Utilization (%)])/100",
               ""
             ],
+            "formatString": "0%;-0%;0%",
             "lineageTag": "a55459d4-7912-4bd4-930b-215aabf51b04"
           },
           {
@@ -18260,17 +14611,12 @@
           },
           {
             "name": "Lowest_Storage_Utilization",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
-              "MIN(Warehouse[Daily Storage Utilization (%)])",
+              "MIN(Warehouse[Daily Storage Utilization (%)])/100",
               ""
             ],
+            "formatString": "0%;-0%;0%",
             "lineageTag": "efa8bdbe-b6c9-47ed-aa02-8ff381f1c456"
           },
           {
@@ -18512,6 +14858,8 @@
               ""
             ],
             "lineageTag": "b8a78fbd-52ce-4ad6-9d59-f7ddce610f9d"
+
+
           }
         ],
         "partitions": [
