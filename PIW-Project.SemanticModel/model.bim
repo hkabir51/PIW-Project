@@ -6986,6 +6986,41 @@
                   }
                 ]
               },
+              "v_Measure_measure.gauge_color_backorder": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "GaugeColorBackorder"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "gauge color backorder": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "GaugeColorBackorder": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "backorder": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "color backorder": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
               "v_Measure_measure.guge_maximum": {
                 "Definition": {
                   "Binding": {
@@ -8129,6 +8164,141 @@
                   }
                 ]
               },
+              "v_Measure_measure.order_accuracy_color": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "OrderAccuracyColor"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "order accuracy color": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "OrderAccuracyColor": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "color": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "accuracy color": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "order accuracy hue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "accuracy hue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "order accuracy tint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "order accuracy shade": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "order accuracy dye": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "order accuracy paint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "order accuracy pigment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "hue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "accuracy tint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "accuracy shade": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
               "v_Measure_measure.order_processing_efficiency": {
                 "Definition": {
                   "Binding": {
@@ -8389,6 +8559,141 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.491
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.picking_accuracy_color": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "PickingAccuracyColor"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "picking accuracy color": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "PickingAccuracyColor": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "color": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "accuracy color": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "picking accuracy hue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "accuracy hue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "picking accuracy tint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "picking accuracy shade": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "picking accuracy dye": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "picking accuracy paint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "picking accuracy pigment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "hue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "accuracy tint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "accuracy shade": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
                     }
                   }
                 ]
@@ -14944,6 +15249,39 @@
                 },
                 "State": "Generated"
               },
+              "v_Measure_measure_has_gauge_color_backorder": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.gauge_color_backorder"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_gauge_color_backorder",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.gauge_color_backorder": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.gauge_color_backorder"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "v_Measure_measure_has_guge_maximum": {
                 "Binding": {
                   "ConceptualEntity": "_Measure"
@@ -15038,6 +15376,72 @@
                   "v_Measure_measure.min_backorder": {
                     "Target": {
                       "Entity": "v_Measure_measure.min_backorder"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_Measure_measure_has_order_accuracy_color": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.order_accuracy_color"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_order_accuracy_color",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.order_accuracy_color": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.order_accuracy_color"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_Measure_measure_has_picking_accuracy_color": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.picking_accuracy_color"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_picking_accuracy_color",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.picking_accuracy_color": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.picking_accuracy_color"
                     }
                   }
                 },
@@ -16892,7 +17296,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "0.0",
             "lineageTag": "f142f437-02ce-4b71-93e8-4f7a076030d0",
             "sourceColumn": "Total Items Sold",
             "summarizeBy": "sum"
@@ -16920,7 +17324,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "0.0",
             "lineageTag": "bbc49c57-489b-45ac-9d99-667b2e56fdc9",
             "sourceColumn": "Total Inventory Counts",
             "summarizeBy": "sum"
@@ -17441,7 +17845,7 @@
             "name": "COGS",
             "displayFolder": "Inventory",
             "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
-            "formatString": "0",
+            "formatString": "0.0",
             "lineageTag": "e6fa9544-a2c1-420c-953f-b5c153f2fbf9"
           },
           {
@@ -17449,7 +17853,7 @@
             "annotations": [
               {
                 "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
+                "value": "{\"isDecimal\":true}"
               }
             ],
             "displayFolder": "Inventory",
@@ -17460,47 +17864,32 @@
               "    SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
               ") * 365"
             ],
+            "formatString": "0",
             "lineageTag": "1d39473f-00e0-4d5e-b4f4-b3c810cfccd9"
           },
           {
             "name": "Stockout Rate",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Inventory",
             "expression": [
               "",
               "    DIVIDE(",
               "        SUM(Inventory[Number of Stockouts]),",
               "        SUM(Inventory[Total Order Occasions])",
-              "    ) * 100",
+              "    )",
               ""
             ],
+            "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "e1858fb7-706e-4786-9efb-a8765c510cab"
           },
           {
             "name": "Carrying Cost",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Inventory",
             "expression": "SUMX('Inventory', 'Inventory'[Average Inventory ($)] * 'Inventory'[Carrying Cost Percentage (%)] / 100)",
+            "formatString": "0.0",
             "lineageTag": "5a5da6e8-b145-4457-9745-2c158e6f9704"
           },
           {
             "name": "Rate of Return",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Inventory",
             "expression": [
               "",
@@ -17509,6 +17898,7 @@
               "    SUM(Inventory[Total Items Sold])",
               ") * 100"
             ],
+            "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "be7fab34-f7fd-4a10-85bb-1c2628cdf79e"
           },
           {
@@ -17542,21 +17932,16 @@
           },
           {
             "name": "Cycle Count Accuracy (Percentage)",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Inventory",
             "expression": [
               "",
               "DIVIDE(",
               "    SUM(Inventory[Correct Cycle Counts]),",
               "    SUM(Inventory[Total Cycle Counts])",
-              ") * 100",
+              ")",
               ""
             ],
+            "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "2618d294-b70a-4dcf-90a6-3c9130b61735"
           },
           {
@@ -17766,12 +18151,6 @@
           },
           {
             "name": "Average_Inventory",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
               "DIVIDE(SUM('Warehouse'[Beginning Inventory ($)]) + SUM('Warehouse'[Ending Inventory ($)]), 2)",
@@ -17779,6 +18158,7 @@
               "",
               ""
             ],
+            "formatString": "0.0",
             "lineageTag": "ce34bec0-6a32-4ce8-8f45-ae4b617b3164"
           },
           {
@@ -17825,32 +18205,22 @@
           },
           {
             "name": "COGS_Per_Order",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
               "DIVIDE(SUM('Warehouse'[COGS ($)]), SUM('Warehouse'[Total Orders]))",
               ""
             ],
+            "formatString": "0.0",
             "lineageTag": "91792b73-5a42-4ceb-ba62-5d012f58d8f8"
           },
           {
             "name": "COGS_Per_Ordered_Item",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
               "DIVIDE(SUM('Warehouse'[COGS ($)]), SUM('Warehouse'[Total Number of Ordered Items]))",
               ""
             ],
+            "formatString": "0.0",
             "lineageTag": "dfaea90c-e186-4d89-97b8-aef9dc6747e1"
           },
           {
@@ -17885,7 +18255,7 @@
               ")/100",
               ""
             ],
-            "formatString": "0.00%;-0.00%;0.00%",
+            "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "04f0a536-af39-4c18-816a-2f33d6b309be"
           },
           {
@@ -17949,7 +18319,7 @@
             "name": "Storage_Utilization",
             "displayFolder": "Wirehouse",
             "expression": "DIVIDE(SUM(Warehouse[Used Storage Space (sq ft)]),SUM(Warehouse[Total Storage Space (sq ft)]),0)",
-            "formatString": "0.00%;-0.00%;0.00%",
+            "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "7b0e99de-97cf-46eb-b831-05f71b8ca98a"
           },
           {
@@ -17973,7 +18343,7 @@
             "name": "Total_Pick",
             "displayFolder": "Wirehouse",
             "expression": "SUM(Warehouse[Total Number of Picks])",
-            "formatString": "0",
+            "formatString": "0.0",
             "lineageTag": "826fce5e-bf98-46e7-b9ee-17781106a337"
           },
           {
@@ -18023,12 +18393,6 @@
           },
           {
             "name": "Cost_Per_SqFt",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "displayFolder": "Wirehouse",
             "expression": [
               "",
@@ -18038,6 +18402,7 @@
               ")",
               ""
             ],
+            "formatString": "0.0",
             "lineageTag": "36937f53-3c19-4888-8941-19f65b234bf7"
           },
           {
@@ -18083,7 +18448,7 @@
             "annotations": [
               {
                 "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
+                "value": "{\"isDecimal\":true}"
               }
             ],
             "displayFolder": "Wirehouse",
@@ -18095,7 +18460,58 @@
               ")",
               ""
             ],
+            "formatString": "0",
             "lineageTag": "279e0e53-bf08-4d68-86ca-939f35fca067"
+          },
+          {
+            "name": "GaugeColorBackorder",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    [Backorder_Rate] < .03, \"Green\",  // For rates less than 3",
+              "    [Backorder_Rate] >= .03 && [Backorder_Rate] < .04, \"Orange\",  // For rates between 3 and ",
+              "    \"Red\"  // for above 5",
+              ")",
+              "",
+              ""
+            ],
+            "lineageTag": "23310d9b-6e1a-4690-8728-dbb830abfe60"
+          },
+          {
+            "name": "OrderAccuracyColor",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    [Order_Accuracy] < .50, \"Red\",    // For accuracy less than 50",
+              "    [Order_Accuracy] >= .50 && [Order_Accuracy] < .66, \"Yellow\",  // For accuracy between 50 and 65",
+              "    [Order_Accuracy] >= .66 && [Order_Accuracy] < .85, \"Light Green\",  // For accuracy between 66 and 84",
+              "    [Order_Accuracy] >= .85, \"Green\",  // For accuracy 85 and above",
+              "    \"Gray\"  // Default case if none of the above is met",
+              ")",
+              ""
+            ],
+            "lineageTag": "58000b60-5ab3-4ae6-85d4-b6318506f1f2"
+          },
+          {
+            "name": "PickingAccuracyColor",
+            "displayFolder": "Wirehouse",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    [Picking_Accuracy] < .50, \"Red\",    // For accuracy less than 50",
+              "    [Picking_Accuracy] >= .50 && [Picking_Accuracy] < .66, \"Yellow\",  // For accuracy between 50 and 65",
+              "    [Picking_Accuracy] >= .66 && [Picking_Accuracy] < .85, \"Light Green\",  // For accuracy between 66 and 84",
+              "    [Picking_Accuracy] >= .85, \"Green\",  // For accuracy 85 and above",
+              "    \"Gray\"  // Default case if none of the above is met",
+              ")",
+              ""
+            ],
+            "lineageTag": "b8a78fbd-52ce-4ad6-9d59-f7ddce610f9d"
           }
         ],
         "partitions": [
