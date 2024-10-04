@@ -430,6 +430,15 @@
           "z": 14000.00
         },
         {
+          "config": "{\"name\":\"831af31dbd792ab867ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":100,\"y\":100,\"width\":300,\"height\":300,\"z\":16001,\"tabOrder\":16001}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 300.00,
+          "x": 100.00,
+          "y": 100.00,
+          "z": 16001.00
+        },
+        {
           "config": "{\"name\":\"856726988b582ee35864\",\"layouts\":[{\"id\":0,\"position\":{\"x\":328.15185233669325,\"y\":71.17999738185625,\"z\":15000,\"width\":943.4365754679932,\"height\":440.3508312606362,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'octagon'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"octagonSnipSize\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.5}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 440.35,
