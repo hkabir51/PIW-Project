@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1567,
+  "compatibilityLevel": 1601,
   "model": {
     "annotations": [
       {
@@ -8,11 +8,11 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.132.1053.0 (24.08)"
+        "value": "2.136.1202.0 (24.09)"
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Procurement\",\"Inventory\",\"Warehouse\",\"_Measure\"]"
+        "value": "[\"Procurement\",\"Inventory\",\"Warehouse\",\"_Measure\",\"StartDate\",\"EndDate\",\"Date\"]"
       },
       {
         "name": "PBI_ProTooling",
@@ -30,6 +30,495 @@
         "linguisticMetadata": {
           "content": {
             "Entities": {
+              "date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.87
+                    }
+                  },
+                  {
+                    "moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "date.date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Dates"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "date.month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Month"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
+              "date.month_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Month Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "month name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "month nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "month title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "month label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "month tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "mth name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  }
+                ]
+              },
+              "date.quarter": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Quarter"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  }
+                ]
+              },
+              "date.quarter_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Quarter Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "quarter name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "quarter nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "quarter title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "quarter label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "quarter tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "qtr name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.667
+                    }
+                  }
+                ]
+              },
+              "date.start_of_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Start of Month"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "start of month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "start": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "start of mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "twitch of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "jump of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "jerk of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "flinch of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "jolt of month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "twitch": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "jump": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "jerk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "flinch": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  }
+                ]
+              },
+              "date.week_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Week Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "week name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "week nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "date.week_of_year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Week of Year"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "week of year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "week of yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  }
+                ]
+              },
+              "date.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Year"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  }
+                ]
+              },
               "inventory": {
                 "Definition": {
                   "Binding": {
@@ -528,17 +1017,26 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Inventory",
+<<<<<<< Updated upstream
                     "ConceptualProperty": "DemandCategory"
+=======
+                    "ConceptualProperty": "Delivery Status"
+>>>>>>> Stashed changes
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
+<<<<<<< Updated upstream
                     "demand category": {
+=======
+                    "ship day": {
+>>>>>>> Stashed changes
                       "State": "Generated"
                     }
                   },
                   {
+<<<<<<< Updated upstream
                     "DemandCategory": {
                       "State": "Generated",
                       "Type": "Noun",
@@ -649,6 +1147,15 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.714
+=======
+                    "Demand (Days)": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+>>>>>>> Stashed changes
                     }
                   }
                 ]
@@ -1155,7 +1662,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Inventory",
-                    "ConceptualProperty": "ReturnSegment"
+                    "ConceptualProperty": "Return Segment"
                   }
                 },
                 "State": "Generated",
@@ -1163,13 +1670,6 @@
                   {
                     "return segment": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "ReturnSegment": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
                     }
                   },
                   {
@@ -1284,7 +1784,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Inventory",
-                    "ConceptualProperty": "ReturnStatus"
+                    "ConceptualProperty": "Return Status"
                   }
                 },
                 "State": "Generated",
@@ -1292,13 +1792,6 @@
                   {
                     "return status": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "ReturnStatus": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
                     }
                   },
                   {
@@ -1439,134 +1932,21 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Inventory",
-                    "ConceptualProperty": "SalesSegment"
+                    "ConceptualProperty": "Sales Vol"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "sales segment": {
+                    "sales vol": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "sale segment": {
+                    "sale vol": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.78
-                    }
-                  },
-                  {
-                    "SalesSegment": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "segment": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "sale division": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "sale subdivision": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "division": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "subdivision": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "sale section": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sale sector": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sale bit": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sale fragment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sale part": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sale piece": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
                     }
                   }
                 ]
@@ -4651,6 +5031,438 @@
                 ]
               },
               "v_Measure_measure.COGS_backorder_impact": {
+<<<<<<< Updated upstream
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "COGS_Backorder_Impact"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "COGS backorder impact": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "COGS_Backorder_Impact": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "impact": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "backorder impact": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "cog backorder impression": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "backorder impression": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "cog backorder influence": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "cog backorder effect": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "cog backorder bearing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "cog backorder power": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "cog backorder control": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "cog backorder sway": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "impression": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "backorder influence": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.COGS_per_order": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "COGS_Per_Order"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "COGS per order": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "COGS_Per_Order": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "COGS": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "mechanism per order": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "device per order": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "workings per order": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "works per order": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "mechanism": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "device": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "workings": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "cogwheel per order": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "gearwheel per order": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "flywheel per order": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "COGS/SqFt": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.COGS_per_ordered_item": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "COGS_Per_Ordered_Item"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "COGS per ordered item": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "COGS_Per_Ordered_Item": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "cog per ordered product": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "cog per ordered element": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "cog per ordered entry": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "cog per ordered article": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "cog per ordered object": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "cog per ordered piece": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "cog per ordered token": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "mechanism per ordered item": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "device per ordered item": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "workings per ordered item": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "COGS/Ordr Item": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.Days_of_Inventory_on_Hand_DOH": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Days_of_Inventory_on_Hand (DOH)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Days_of_Inventory_on_Hand (DOH)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Days_of_Inventory_on_Hand": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.PY_cost": {
+=======
+>>>>>>> Stashed changes
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
@@ -5083,120 +5895,27 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "PY Cost"
+                    "ConceptualProperty": "PM_CS"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "PY cost": {
+                    "pm cs": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "cost": {
+                    "PM_CS": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "cs": {
                       "State": "Generated",
                       "Weight": 0.97
-                    }
-                  },
-                  {
-                    "py price": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "py charge": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "py rate": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "py fee": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "py total": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "price": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "charge": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "fee": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "py expenditure": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.475
-                    }
-                  },
-                  {
-                    "expenditure": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.466
                     }
                   }
                 ]
@@ -6218,6 +6937,22 @@
                   }
                 ]
               },
+              "v_Measure_measure.cm": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "CM"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cm": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "v_Measure_measure.cog": {
                 "Definition": {
                   "Binding": {
@@ -6576,11 +7311,30 @@
                   }
                 ]
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure.cost_referance": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Cost Referance"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cost referance": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure.cost_savings": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Cost_Savings"
+                    "ConceptualProperty": "Cost Savings"
                   }
                 },
                 "State": "Generated",
@@ -6588,13 +7342,6 @@
                   {
                     "cost savings": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "Cost_Savings": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
                     }
                   },
                   {
@@ -6970,6 +7717,252 @@
                   }
                 ]
               },
+              "v_Measure_measure.detail_AO": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Detail AO%"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "detail AO%": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "detail ao percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "detail ao pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.detail_CS": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Detail CS"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "detail CS": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "CS": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.detail_DI": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Detail DI%"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "detail DI%": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "detail di percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "detail di pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.detail_SR": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Detail SR%"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "detail SR%": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "detail sr percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "detail sr pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.detail_TO": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Detail TO"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "detail TO": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "aspect to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "element to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "fact to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "part to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "feature to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "point to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "factor to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "facet to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "unit to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "taskforce to": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  }
+                ]
+              },
               "v_Measure_measure.doh": {
                 "Definition": {
                   "Binding": {
@@ -7212,6 +8205,41 @@
                   }
                 ]
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure.in_stock": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "In Stock"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "in stock": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "stock": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "in inventory": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure.inventory_accuracy": {
                 "Definition": {
                   "Binding": {
@@ -7450,6 +8478,87 @@
                   }
                 ]
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure.low_stock": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Low Stock"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "low stock": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "stock": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "low inventory": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.low_stock_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Low Stock %"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "low stock %": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "low stock percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "low stock pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "low inventory %": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure.lowest_storage_utilization": {
                 "Definition": {
                   "Binding": {
@@ -7783,18 +8892,18 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "% of Acurate_order"
+                    "ConceptualProperty": "Acurate Order %"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "% of Acurate_order": {
+                    "acurate order %": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "percentage of acurate_order": {
+                    "acurate order percentage": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -7804,7 +8913,7 @@
                     }
                   },
                   {
-                    "pct of acurate_order": {
+                    "acurate order pct": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -7829,34 +8938,114 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "% of Cost_Saving"
+                    "ConceptualProperty": "% Cost Saving"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "% of Cost_Saving": {
+                    "% cost saving": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "percentage of cost_saving": {
+                    "percentage cost saving": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.762
+                      "Weight": 0.609
                     }
                   },
                   {
-                    "pct of cost_saving": {
+                    "pct cost saving": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.739
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "% price saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "% charge saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "% rate saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "% fee saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "% total saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "% expenditure saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "% budget saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  },
+                  {
+                    "% amount saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
                     }
                   }
                 ]
@@ -7865,18 +9054,18 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "% of Defect_Items"
+                    "ConceptualProperty": "Defect Items %"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "% of Defect_Items": {
+                    "defect items %": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "percentage of defect_item": {
+                    "defect item percentage": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -7886,7 +9075,7 @@
                     }
                   },
                   {
-                    "pct of defect_item": {
+                    "defect item pct": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -8698,6 +9887,226 @@
                   }
                 ]
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure.pm_ao": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "PM AO"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pm ao": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ao": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.pm_di": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "PM DI"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pm di": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.pm_sr": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "PM SR"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pm sr": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sr": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.pm_to": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "PM_TO"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pm to": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "PM_TO": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.previous_month_cost_saving": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Previous Month Cost Saving"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "previous month cost saving": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "saving": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "cost saving": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "month cost saving": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "previous mth cost saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "mth cost saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "previous month price saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "previous month charge saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "previous month rate saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "previous month fee saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "previous month total saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "month price saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "month charge saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "month rate saving": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  }
+                ]
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure.rate_of_return": {
                 "Definition": {
                   "Binding": {
@@ -8824,7 +10233,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Reorder Point"
+                    "ConceptualProperty": "Re-Order Point"
                   }
                 },
                 "State": "Generated",
@@ -8942,6 +10351,125 @@
                   }
                 ]
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure.return": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "% Return"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "% return": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "percentage return": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "pct return": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "% reappearance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "% reoccurrence": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "% homecoming": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "% arrival": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "% revenue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "% profit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "% yield": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "% gain": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  }
+                ]
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure.stock_turnover_ratio": {
                 "Definition": {
                   "Binding": {
@@ -9194,6 +10722,138 @@
                 ]
               },
               "v_Measure_measure.storage_utilization": {
+<<<<<<< Updated upstream
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "Storage_Utilization"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "storage utilization": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Storage_Utilization": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "utilization": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "storage operation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "storage consumption": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "storage exploitation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "storage deployment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "operation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "consumption": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "exploitation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "deployment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "storage use": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "storage application": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.supplier_reliability": {
+=======
+>>>>>>> Stashed changes
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
@@ -9326,100 +10986,34 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Supplier Reliability"
+                    "ConceptualProperty": "Supplier Reliability %"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "supplier reliability": {
+                    "supplier reliability %": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "reliability": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "supplier dependability": {
+                    "supplier reliability percentage": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.762
                     }
                   },
                   {
-                    "supplier consistency": {
+                    "supplier reliability pct": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "supplier steadfastness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "supplier trustworthiness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "dependability": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "consistency": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "steadfastness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "trustworthiness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
+                      "Weight": 0.739
                     }
                   },
                   {
@@ -10169,7 +11763,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Measure",
-                    "ConceptualProperty": "Total_order"
+                    "ConceptualProperty": "Total Order"
                   }
                 },
                 "State": "Generated",
@@ -10177,13 +11771,6 @@
                   {
                     "total order": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "Total_order": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
                     }
                   },
                   {
@@ -10681,6 +12268,44 @@
                   }
                 ]
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure.v_PM_pm": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "_PM"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_pm": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "v_Measure_measure.v__PM_FormatString__PM_FormatString": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Measure",
+                    "ConceptualProperty": "__PM FormatString"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "__PM FormatString": {
+                      "State": "Generated"
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure.warehouse_highest_storage_utilization": {
                 "Definition": {
                   "Binding": {
@@ -12603,6 +14228,303 @@
             },
             "Language": "en-US",
             "Relationships": {
+              "date_has_date": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.date"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.date": {
+                    "Target": {
+                      "Entity": "date.date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_month": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.month"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_months",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.month": {
+                    "Target": {
+                      "Entity": "date.month"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_month_name": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.month_name"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_month_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.month_name": {
+                    "Target": {
+                      "Entity": "date.month_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_quarter": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.quarter"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_quarters",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.quarter": {
+                    "Target": {
+                      "Entity": "date.quarter"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_quarter_name": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.quarter_name"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_quarter_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.quarter_name": {
+                    "Target": {
+                      "Entity": "date.quarter_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_start_of_month": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.start_of_month"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_start_of_month",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.start_of_month": {
+                    "Target": {
+                      "Entity": "date.start_of_month"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_week_name": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.week_name"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_week_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.week_name": {
+                    "Target": {
+                      "Entity": "date.week_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_week_of_year": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.week_of_year"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_week_of_year",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.week_of_year": {
+                    "Target": {
+                      "Entity": "date.week_of_year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_year": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.year"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.year": {
+                    "Target": {
+                      "Entity": "date.year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "inventory_has_accurate_inventory_count": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -12782,7 +14704,11 @@
                         "Role": "inventory"
                       }
                     },
+<<<<<<< Updated upstream
                     "ID": "inventories_have_demand_categories",
+=======
+                    "ID": "inventories_have_ship_days",
+>>>>>>> Stashed changes
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13079,7 +15005,7 @@
                         "Role": "inventory"
                       }
                     },
-                    "ID": "inventories_have_sales_segments",
+                    "ID": "inventories_have_sales_vols",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13422,6 +15348,39 @@
                 },
                 "State": "Generated"
               },
+              "inventory_has_v_Measure_measure_in_stock": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.in_stock"
+                      },
+                      "Subject": {
+                        "Role": "inventory"
+                      }
+                    },
+                    "ID": "inventories_have_in_stock",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory": {
+                    "Target": {
+                      "Entity": "inventory"
+                    }
+                  },
+                  "v_Measure_measure.in_stock": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.in_stock"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "inventory_has_v_Measure_measure_inventory_accuracy": {
                 "Binding": {
                   "ConceptualEntity": "Inventory"
@@ -13516,6 +15475,39 @@
                   "v_Measure_measure.reorder_point": {
                     "Target": {
                       "Entity": "v_Measure_measure.reorder_point"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_has_v_Measure_measure_return": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.return"
+                      },
+                      "Subject": {
+                        "Role": "inventory"
+                      }
+                    },
+                    "ID": "inventories_have__return",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory": {
+                    "Target": {
+                      "Entity": "inventory"
+                    }
+                  },
+                  "v_Measure_measure.return": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.return"
                     }
                   }
                 },
@@ -13768,6 +15760,52 @@
                   "procurement.cost_savings": {
                     "Target": {
                       "Entity": "procurement.cost_savings"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "procurement_has_date": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "procurement"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_procurements",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
                     }
                   }
                 },
@@ -14447,34 +16485,7 @@
                         "Role": "procurement"
                       }
                     },
-                    "ID": "procurements_have_PY_cost",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Adjective": {
-                      "Adjectives": [
-                        {
-                          "expensive": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Antonyms": [
-                        {
-                          "cheap": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Measurement": {
-                        "Role": "v_Measure_measure.PY_cost"
-                      },
-                      "Subject": {
-                        "Role": "procurement"
-                      }
-                    },
-                    "ID": "PY_cost_indicates_how_expensive_procurements_are",
+                    "ID": "procurements_have_pm_cs",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14646,6 +16657,75 @@
                 },
                 "State": "Generated"
               },
+<<<<<<< Updated upstream
+=======
+              "procurement_has_v_Measure_measure_cm": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.cm"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_cm",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.cm": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.cm"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "procurement_has_v_Measure_measure_cost_referance": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.cost_referance"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_cost_referance",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.cost_referance": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.cost_referance"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+>>>>>>> Stashed changes
               "procurement_has_v_Measure_measure_cost_savings": {
                 "Binding": {
                   "ConceptualEntity": "Procurement"
@@ -14858,7 +16938,7 @@
                         "Role": "procurement"
                       }
                     },
-                    "ID": "procurements_have__of_Acurate_order",
+                    "ID": "procurements_have_acurate_order_",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14891,7 +16971,7 @@
                         "Role": "procurement"
                       }
                     },
-                    "ID": "procurements_have__of_Cost_Saving",
+                    "ID": "procurements_have__cost_saving",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14924,7 +17004,7 @@
                         "Role": "procurement"
                       }
                     },
-                    "ID": "procurements_have__of_Defect_Items",
+                    "ID": "procurements_have_defect_items_",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14976,6 +17056,171 @@
                 },
                 "State": "Generated"
               },
+              "procurement_has_v_Measure_measure_pm_ao": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.pm_ao"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_pm_ao",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.pm_ao": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.pm_ao"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "procurement_has_v_Measure_measure_pm_di": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.pm_di"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_pm_di",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.pm_di": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.pm_di"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "procurement_has_v_Measure_measure_pm_sr": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.pm_sr"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_pm_sr",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.pm_sr": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.pm_sr"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "procurement_has_v_Measure_measure_pm_to": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.pm_to"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_pm_to",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.pm_to": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.pm_to"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "procurement_has_v_Measure_measure_previous_month_cost_saving": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.previous_month_cost_saving"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have_previous_month_cost_saving",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.previous_month_cost_saving": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.previous_month_cost_saving"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "procurement_has_v_Measure_measure_supplier_reliability": {
                 "Binding": {
                   "ConceptualEntity": "Procurement"
@@ -14990,7 +17235,7 @@
                         "Role": "procurement"
                       }
                     },
-                    "ID": "procurements_have_supplier_reliability",
+                    "ID": "procurements_have_supplier_reliability_",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15141,6 +17386,39 @@
                 },
                 "State": "Generated"
               },
+              "procurement_has_v_Measure_measure_v_PM_pm": {
+                "Binding": {
+                  "ConceptualEntity": "Procurement"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.v_PM_pm"
+                      },
+                      "Subject": {
+                        "Role": "procurement"
+                      }
+                    },
+                    "ID": "procurements_have__pm",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "procurement": {
+                    "Target": {
+                      "Entity": "procurement"
+                    }
+                  },
+                  "v_Measure_measure.v_PM_pm": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.v_PM_pm"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "procurement_is_requisitioned_on_purchase_requisition_date": {
                 "Binding": {
                   "ConceptualEntity": "Procurement"
@@ -15249,6 +17527,205 @@
                 },
                 "State": "Generated"
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure_has_detail_AO": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.detail_AO"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_detail_AO",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.detail_AO": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.detail_AO"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_Measure_measure_has_detail_CS": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.detail_CS"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_detail_CS",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.detail_CS": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.detail_CS"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_Measure_measure_has_detail_DI": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.detail_DI"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_detail_DI",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.detail_DI": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.detail_DI"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_Measure_measure_has_detail_SR": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.detail_SR"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_detail_SR",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.detail_SR": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.detail_SR"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_Measure_measure_has_detail_TO": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.detail_TO"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_detail_TO",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "Phrasing_measures_detail_TO_detail_TO",
+                    "State": "Generated",
+                    "Verb": {
+                      "PrepositionalPhrases": [
+                        {
+                          "Object": {
+                            "Role": "v_Measure_measure.detail_TO"
+                          },
+                          "Prepositions": [
+                            {
+                              "TO": {
+                                "State": "Generated"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      },
+                      "Verbs": [
+                        {
+                          "detail": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.95
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.detail_TO": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.detail_TO"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure_has_gauge_color_backorder": {
                 "Binding": {
                   "ConceptualEntity": "_Measure"
@@ -15315,6 +17792,75 @@
                 },
                 "State": "Generated"
               },
+<<<<<<< Updated upstream
+=======
+              "v_Measure_measure_has_low_stock": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.low_stock"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_low_stock",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.low_stock": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.low_stock"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_Measure_measure_has_low_stock_": {
+                "Binding": {
+                  "ConceptualEntity": "_Measure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Measure_measure.low_stock_"
+                      },
+                      "Subject": {
+                        "Role": "v_Measure_measure"
+                      }
+                    },
+                    "ID": "Phrasing_measures_have_low_stock_",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_Measure_measure": {
+                    "Target": {
+                      "Entity": "v_Measure_measure"
+                    }
+                  },
+                  "v_Measure_measure.low_stock_": {
+                    "Target": {
+                      "Entity": "v_Measure_measure.low_stock_"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+>>>>>>> Stashed changes
               "v_Measure_measure_has_max_backorder": {
                 "Binding": {
                   "ConceptualEntity": "_Measure"
@@ -15784,7 +18330,7 @@
                         "Role": "warehouse"
                       }
                     },
-                    "ID": "warehouses_have_total_correct_orders",
+                    "ID": "warehouses_have_total_correct_orders1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16543,7 +19089,7 @@
                         "Role": "warehouse"
                       }
                     },
-                    "ID": "warehouses_have_total_correct_orders1",
+                    "ID": "warehouses_have_total_correct_orders",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16792,6 +19338,55 @@
                   }
                 },
                 "State": "Generated"
+<<<<<<< Updated upstream
+=======
+              },
+              "warehouse_is_storage_quality": {
+                "Binding": {
+                  "ConceptualEntity": "Warehouse"
+                },
+                "Phrasings": [
+                  {
+                    "DynamicAdjective": {
+                      "Adjective": {
+                        "Role": "warehouse.storage_quality"
+                      },
+                      "Subject": {
+                        "Role": "warehouse"
+                      }
+                    },
+                    "ID": "storage_qualities_describe_warehouses",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "warehouse.storage_quality"
+                      },
+                      "Subject": {
+                        "Role": "warehouse"
+                      }
+                    },
+                    "ID": "warehouses_have_storage_qualities",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "warehouse": {
+                    "Target": {
+                      "Entity": "warehouse"
+                    }
+                  },
+                  "warehouse.storage_quality": {
+                    "Target": {
+                      "Entity": "warehouse.storage_quality"
+                    }
+                  }
+                },
+                "State": "Generated"
+>>>>>>> Stashed changes
               }
             },
             "Version": "3.5.0"
@@ -16805,6 +19400,57 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "StartDate",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Date"
+          }
+        ],
+        "expression": "#date(2023, 12, 1) meta [IsParameterQuery=true, Type=\"Date\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "f18a5ee5-7971-4368-bff5-28091c9ee7a4"
+      },
+      {
+        "name": "EndDate",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Date"
+          }
+        ],
+        "expression": "#date(2024, 2, 29) meta [IsParameterQuery=true, Type=\"Date\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "4c1072a2-0cf9-4cc9-a11e-48356e2ab841"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "b4bf03c1-7bbb-f869-1dbb-237ef982e593",
+        "fromColumn": "Delivery Date",
+        "fromTable": "Procurement",
+        "toColumn": "Dates",
+        "toTable": "Date"
+      },
+      {
+        "name": "79577448-a92b-3d27-e8be-5131d4416fbe",
+        "fromColumn": "Purchase Requisition Date",
+        "fromTable": "Procurement",
+        "isActive": false,
+        "toColumn": "Dates",
+        "toTable": "Date"
+      }
+    ],
     "sourceQueryCulture": "en-US",
     "tables": [
       {
@@ -17184,6 +19830,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -17251,7 +19901,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "#,0",
             "lineageTag": "e37af7eb-2c36-4654-b4dd-15fa6c21e931",
             "sourceColumn": "Total Order Occasions",
             "summarizeBy": "sum"
@@ -17282,7 +19932,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "#,0",
             "lineageTag": "e4d5194d-a1ce-4189-ad95-87ed56fb3e43",
             "sourceColumn": "Number of Returned Items",
             "summarizeBy": "sum"
@@ -17293,10 +19943,18 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
               }
             ],
             "dataType": "int64",
+<<<<<<< Updated upstream
             "formatString": "0.0",
+=======
+            "formatString": "#,0",
+>>>>>>> Stashed changes
             "lineageTag": "f142f437-02ce-4b71-93e8-4f7a076030d0",
             "sourceColumn": "Total Items Sold",
             "summarizeBy": "sum"
@@ -17321,10 +19979,18 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
               }
             ],
             "dataType": "int64",
+<<<<<<< Updated upstream
             "formatString": "0.0",
+=======
+            "formatString": "#,0",
+>>>>>>> Stashed changes
             "lineageTag": "bbc49c57-489b-45ac-9d99-667b2e56fdc9",
             "sourceColumn": "Total Inventory Counts",
             "summarizeBy": "sum"
@@ -17398,10 +20064,10 @@
               "",
               "SWITCH(",
               "    TRUE(),",
-              "    Inventory[Number of Stockouts] = 0, \"No Stockouts\",",
-              "    Inventory[Number of Stockouts] > 0 && Inventory[Number of Stockouts] <= 5, \"Low Stockouts\",",
-              "    Inventory[Number of Stockouts] > 5 && Inventory[Number of Stockouts] <= 10, \"Moderate Stockouts\",",
-              "    Inventory[Number of Stockouts] > 10, \"High Stockouts\",",
+              "    Inventory[Number of Stockouts] = 0, \"No Stock\",",
+              "    Inventory[Number of Stockouts] > 0 && Inventory[Number of Stockouts] <= 5, \"Low Stock\",",
+              "    Inventory[Number of Stockouts] > 5 && Inventory[Number of Stockouts] <= 10, \"Moderate Stock\",",
+              "    Inventory[Number of Stockouts] > 10, \"High Stock\",",
               "    \"Unknown\"",
               ")",
               ""
@@ -17412,7 +20078,7 @@
             "type": "calculated"
           },
           {
-            "name": "ReturnStatus",
+            "name": "Return Status",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -17438,7 +20104,7 @@
             "type": "calculated"
           },
           {
-            "name": "ReturnSegment",
+            "name": "Return Segment",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -17464,7 +20130,7 @@
             "type": "calculated"
           },
           {
-            "name": "SalesSegment",
+            "name": "Sales Vol",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -17476,10 +20142,9 @@
               "",
               "SWITCH(",
               "    TRUE(),",
-              "    Inventory[Total Items Sold] <= 5000, \"Low Sales\",",
-              "    Inventory[Total Items Sold] > 5000 && Inventory[Total Items Sold] <= 10000, \"Moderate Sales\",",
-              "    Inventory[Total Items Sold] > 10000 && Inventory[Total Items Sold] <= 15000, \"High Sales\",",
-              "    Inventory[Total Items Sold] > 15000, \"Very High Sales\",",
+              "    Inventory[Total Items Sold] <= 7000, \"Small\",",
+              "    Inventory[Total Items Sold] > 7000 && Inventory[Total Items Sold] <= 15000, \"Medium\",",
+              "    Inventory[Total Items Sold] > 15000, \"Big\",",
               "    \"Unknown\"",
               ")",
               ""
@@ -17490,7 +20155,11 @@
             "type": "calculated"
           },
           {
+<<<<<<< Updated upstream
             "name": "DemandCategory",
+=======
+            "name": "Delivery Status",
+>>>>>>> Stashed changes
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -17501,9 +20170,15 @@
             "expression": [
               "",
               "SWITCH(TRUE(),",
+<<<<<<< Updated upstream
               "   [Lead Time Demand] <= 20, \"Low\",",
               "   [Lead Time Demand] <= 80, \"Medium\",",
               "   [Lead Time Demand] > 80, \"High\"",
+=======
+              "   [Lead Time Demand] <= 30, \"Urgent\",",
+              "   [Lead Time Demand] >=31 && Inventory[Lead Time Demand]<= 60, \"Moderate\",",
+              "   [Lead Time Demand] >=51, \"General\"",
+>>>>>>> Stashed changes
               ")",
               ""
             ],
@@ -17525,10 +20200,17 @@
               "",
               "SWITCH(",
               "    TRUE(),",
+<<<<<<< Updated upstream
               "    Inventory[Lead Time Demand] <= 40 , \"Low Lead Time\",",
               "    Inventory[Lead Time Demand] > 40 && Inventory[Lead Time Demand] <= 80, \"Moderate Lead Time\",",
               "    Inventory[Lead Time Demand] > 80 && Inventory[Number of Stockouts] <= 120, \"High Lead Time\",",
               "    Inventory[Lead Time Demand] > 120, \"Very High Lead Time\",",
+=======
+              "    Inventory[Lead Time Demand] <= 20 , \"Low\",",
+              "    Inventory[Lead Time Demand] > 20 && Inventory[Lead Time Demand] <= 60, \"Moderate\",",
+              "    Inventory[Lead Time Demand] > 60 && Inventory[Number of Stockouts] <= 120, \"High\",",
+              "    Inventory[Lead Time Demand] > 120, \"Very High\",",
+>>>>>>> Stashed changes
               "    \"Unknown\"",
               ")"
             ],
@@ -17536,6 +20218,27 @@
             "lineageTag": "5088280a-e2f6-47ca-a1c0-c8861a0a4690",
             "summarizeBy": "none",
             "type": "calculated"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "name": "Avg. Daily Demand",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0",
+            "lineageTag": "26a9fbb1-09f6-4452-af39-c15a6271041f",
+            "sourceColumn": "Avg. Daily Demand",
+            "summarizeBy": "sum"
+>>>>>>> Stashed changes
           }
         ],
         "lineageTag": "2e59b092-8803-4b85-b33a-d2455cf9648a",
@@ -17548,9 +20251,12 @@
                 "let",
                 "    Source = Csv.Document(Web.Contents(\"https://drive.google.com/uc?export=download&id=1tTpa02otJ9JIk-s4C9QEFDE9IwBbmpUN\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Product ID\", type text}, {\"Average Inventory ($)\", Int64.Type}, {\"Cost of Goods Sold (COGS) ($)\", Int64.Type}, {\"Number of Stockouts\", Int64.Type}, {\"Total Order Occasions\", Int64.Type}, {\"Carrying Cost Percentage (%)\", type number}, {\"Number of Returned Items\", Int64.Type}, {\"Total Items Sold\", Int64.Type}, {\"Accurate Inventory Counts\", Int64.Type}, {\"Total Inventory Counts\", Int64.Type}, {\"Lead Time Demand\", Int64.Type}, {\"Safety Stock\", Int64.Type}, {\"Correct Cycle Counts\", Int64.Type}, {\"Total Cycle Counts\", Int64.Type}})",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Product ID\", type text}, {\"Average Inventory ($)\", Int64.Type}, {\"Cost of Goods Sold (COGS) ($)\", Int64.Type}, {\"Number of Stockouts\", Int64.Type}, {\"Total Order Occasions\", Int64.Type}, {\"Carrying Cost Percentage (%)\", type number}, {\"Number of Returned Items\", Int64.Type}, {\"Total Items Sold\", Int64.Type}, {\"Accurate Inventory Counts\", Int64.Type}, {\"Total Inventory Counts\", Int64.Type}, {\"Lead Time Demand\", Int64.Type}, {\"Safety Stock\", Int64.Type}, {\"Correct Cycle Counts\", Int64.Type}, {\"Total Cycle Counts\", Int64.Type}}),",
+                "    #\"Inserted Division\" = Table.AddColumn(#\"Changed Type\", \"Division\", each [Total Order Occasions] / 30, type number),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Inserted Division\",{{\"Division\", \"Avg. Daily Demand\"}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Renamed Columns\",{\"Product ID\", \"Average Inventory ($)\", \"Cost of Goods Sold (COGS) ($)\", \"Number of Stockouts\", \"Total Order Occasions\", \"Avg. Daily Demand\", \"Carrying Cost Percentage (%)\", \"Number of Returned Items\", \"Total Items Sold\", \"Accurate Inventory Counts\", \"Total Inventory Counts\", \"Lead Time Demand\", \"Safety Stock\", \"Correct Cycle Counts\", \"Total Cycle Counts\"})",
                 "in",
-                "    #\"Changed Type\""
+                "    #\"Reordered Columns\""
               ],
               "type": "m"
             }
@@ -17793,6 +20499,24 @@
             "lineageTag": "e256466d-55ce-4493-a3f9-7c3a26b85456",
             "sourceColumn": "Storage_Quality",
             "summarizeBy": "none"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "name": "Location",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(Warehouse[Used Storage Space (sq ft)] >= 2800, \"South\", IF(Warehouse[Used Storage Space (sq ft)]>=1550, \"North\", \"West\"))",
+            "isDataTypeInferred": true,
+            "lineageTag": "b8598295-d5d1-47f5-89d3-d737309f1f77",
+            "summarizeBy": "none",
+            "type": "calculated"
+>>>>>>> Stashed changes
           }
         ],
         "lineageTag": "ec8fd5b5-0270-4e7a-8c38-b2a79bb293e4",
@@ -17843,9 +20567,19 @@
           },
           {
             "name": "COGS",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
             "displayFolder": "Inventory",
             "expression": "SUM(Inventory[Cost of Goods Sold (COGS) ($)])",
+<<<<<<< Updated upstream
             "formatString": "0.0",
+=======
+            "formatString": "#,0",
+>>>>>>> Stashed changes
             "lineageTag": "e6fa9544-a2c1-420c-953f-b5c153f2fbf9"
           },
           {
@@ -17883,9 +20617,21 @@
           },
           {
             "name": "Carrying Cost",
+<<<<<<< Updated upstream
             "displayFolder": "Inventory",
             "expression": "SUMX('Inventory', 'Inventory'[Average Inventory ($)] * 'Inventory'[Carrying Cost Percentage (%)] / 100)",
             "formatString": "0.0",
+=======
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": "SUMX('Inventory', 'Inventory'[Average Inventory ($)] * 'Inventory'[Carrying Cost Percentage (%)] / 100)",
+            "formatString": "0",
+>>>>>>> Stashed changes
             "lineageTag": "5a5da6e8-b145-4457-9745-2c158e6f9704"
           },
           {
@@ -17921,6 +20667,7 @@
             "lineageTag": "3272335e-2a14-4c1e-bbf6-2b282cd2481f"
           },
           {
+<<<<<<< Updated upstream
             "name": "Reorder Point",
             "displayFolder": "Inventory",
             "expression": [
@@ -17928,6 +20675,24 @@
               "SUM(Inventory[Lead Time Demand]) + SUM(Inventory[Safety Stock])"
             ],
             "formatString": "0",
+            "lineageTag": "abdd399f-0b96-4dce-948f-1f44f21578a1"
+          },
+          {
+            "name": "Cycle Count Accuracy (Percentage)",
+=======
+            "name": "Re-Order Point",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+>>>>>>> Stashed changes
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "(SUM(Inventory[Safety Stock]) +(average(Inventory[Avg. Daily Demand]))*AVERAGE(Inventory[Lead Time Demand]))"
+            ],
             "lineageTag": "abdd399f-0b96-4dce-948f-1f44f21578a1"
           },
           {
@@ -17945,7 +20710,7 @@
             "lineageTag": "2618d294-b70a-4dcf-90a6-3c9130b61735"
           },
           {
-            "name": "Cost_Savings",
+            "name": "Cost Savings",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -17958,7 +20723,7 @@
             "lineageTag": "bdd438cf-4b04-4370-ba41-9ecbda7f3faf"
           },
           {
-            "name": "Total_order",
+            "name": "Total Order",
             "displayFolder": "Procurement",
             "expression": "SUM(Procurement[Number of Orders])",
             "formatString": "0.0",
@@ -18037,14 +20802,14 @@
             "lineageTag": "81dcd5d1-1da6-4792-b321-a68597b33243"
           },
           {
-            "name": "% of Defect_Items",
+            "name": "Defect Items %",
             "displayFolder": "Procurement",
             "expression": "DIVIDE([Defective_Items], [Total Item Received])",
             "formatString": "#,0.0%;-#,0.0%;#,0.0%",
             "lineageTag": "32d81902-e3a0-465d-9c21-f47c5d1b95c0"
           },
           {
-            "name": "% of Acurate_order",
+            "name": "Acurate Order %",
             "displayFolder": "Procurement",
             "expression": [
               "",
@@ -18059,7 +20824,7 @@
             "lineageTag": "a3b324d5-2772-4665-a732-e912ffb86dea"
           },
           {
-            "name": "% of Cost_Saving",
+            "name": "% Cost Saving",
             "displayFolder": "Procurement",
             "expression": [
               "",
@@ -18073,7 +20838,7 @@
             "lineageTag": "0837b6ab-eac9-4497-9b6e-01adc7fbcc05"
           },
           {
-            "name": "Supplier Reliability",
+            "name": "Supplier Reliability %",
             "displayFolder": "Procurement",
             "expression": "DIVIDE([On time Deliveries], [Total Deliveries], 0)",
             "formatString": "0.0%;-0.0%;0.0%",
@@ -18095,21 +20860,21 @@
           {
             "name": "PY Cost Savings",
             "displayFolder": "Procurement",
-            "expression": "CALCULATE([Cost_Savings], SAMEPERIODLASTYEAR(Procurement[Delivery Date]))",
+            "expression": "CALCULATE([Cost Savings], PREVIOUSMONTH('Date'[Dates]))",
             "formatString": "0",
             "lineageTag": "c3ecc3fe-8d9a-4035-9923-d7653d51a75c"
           },
           {
-            "name": "PY Cost",
+            "name": "PM_CS",
             "displayFolder": "Procurement",
-            "expression": "CALCULATE([Cost_Savings], PREVIOUSMONTH(Procurement[Delivery Date]))",
+            "expression": "CALCULATE([Cost Savings], PREVIOUSMONTH('Date'[Dates]))",
             "formatString": "0",
             "lineageTag": "d6b73519-60e6-493c-a840-6a6ca17b48c9"
           },
           {
             "name": "Last Motnh Cost Saving",
             "displayFolder": "Procurement",
-            "expression": "CALCULATE([Cost_Savings], PREVIOUSMONTH(Procurement[Delivery Date]))",
+            "expression": "CALCULATE([Cost Savings], PREVIOUSMONTH(Procurement[Delivery Date]))",
             "formatString": "0",
             "lineageTag": "65a9aff8-3d7d-440f-a735-3fcb927e5c1d"
           },
@@ -18502,6 +21267,237 @@
               ""
             ],
             "lineageTag": "b8a78fbd-52ce-4ad6-9d59-f7ddce610f9d"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "name": "% Return",
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    COUNTROWS(Inventory),",
+              "    CALCULATE(COUNTROWS(Inventory), ALL(Inventory))",
+              ")",
+              ""
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "9defe1d5-3330-41c6-9c25-52602c67fb27"
+          },
+          {
+            "name": "CM",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              " CALCULATE([Cost Savings],",
+              " YEAR('Date'[Dates])= YEAR(MAX('Date'[Dates])),",
+              " MONTH('Date'[Dates]) = MONTH(MAX('Date'[Dates])))"
+            ],
+            "formatString": "0",
+            "lineageTag": "64192939-39de-4bfe-8ffc-ddd1738a4b52"
+          },
+          {
+            "name": "_PM",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR _curentMonth = MONTH(MAX('Date'[Dates]))",
+              "VAR _curentYear = YEAR(MAX('Date'[Dates]))",
+              "VAR _PreviousMonth = IF(_curentMonth=1, 12, _curentMonth-1)",
+              "VAR _PreviousYear = IF(_curentMonth=1, _curentYear-1, _curentYear)",
+              "RETURN",
+              "    CALCULATE(",
+              "        [Cost Savings],",
+              "        MONTH('Date'[Dates]) = _PreviousMonth,",
+              "        YEAR('Date'[Dates])=_PreviousYear)"
+            ],
+            "formatStringDefinition": {
+              "expression": "\"0.#\""
+            },
+            "lineageTag": "a521c097-355e-4827-b6df-3dfa51c61eee"
+          },
+          {
+            "name": "Cost Referance",
+            "displayFolder": "Procurement",
+            "expression": "\"CM \" & [CM] & \" | \" & \"PM \" & [_PM]",
+            "lineageTag": "e2aba48f-2551-4aaf-8906-6c4e1c8320fb"
+          },
+          {
+            "name": "Detail CS",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR _pct = DIVIDE([Cost Savings], [PM_CS])-1",
+              "RETURN",
+              "FORMAT(_pct, \"0%\") & ",
+              "    IF(_pct > 0, \" ▲\", \" ▼\")"
+            ],
+            "lineageTag": "17f547e4-ea90-43d6-8042-3c389e670d5b"
+          },
+          {
+            "name": "PM_TO",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Total Order],",
+              "    PREVIOUSMONTH('Date'[Dates])",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "ed025504-2640-4445-abe7-efe9e9f0ac21"
+          },
+          {
+            "name": "PM DI",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "CALCULATE([Defect Items %],",
+              "PREVIOUSMONTH('Date'[Dates])",
+              ")"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "4f7867ac-93ea-4d23-addf-03480069d769"
+          },
+          {
+            "name": "Detail TO",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR _pct = DIVIDE([Total Order], [PM_TO])-1",
+              "RETURN",
+              "FORMAT(_pct, \"0%\") & ",
+              "    IF(_pct > 0, \" ▲\", \" ▼\")"
+            ],
+            "lineageTag": "651c0c89-9441-47b8-9764-2a3d2e4f821f"
+          },
+          {
+            "name": "Detail DI%",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR Diff = [Defect Items %] - [PM DI]",
+              "VAR Symbol = IF(Diff>0, \" ▼\", \" ▲\")",
+              "VAR Result = FORMAT(ABS(Diff), \"0.#%\") & Symbol",
+              "RETURN",
+              "    Result"
+            ],
+            "lineageTag": "0a49e43e-00f2-4275-ae1a-e4dc5240a030"
+          },
+          {
+            "name": "PM AO",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Acurate Order %],",
+              "    PREVIOUSMONTH('Date'[Dates])",
+              ")",
+              ""
+            ],
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "881a5d30-482b-4ef0-a9c6-e100875fdcef"
+          },
+          {
+            "name": "Detail AO%",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR Diff = [Acurate Order %] - [PM AO]",
+              "VAR Symbol = IF(Diff>0, \" ▲\", \" ▼\")",
+              "VAR Result = FORMAT(ABS(Diff), \"#%\") & Symbol",
+              "RETURN",
+              "    Result"
+            ],
+            "lineageTag": "6a196225-1aec-4aaf-b3c9-4d4a1ec77375"
+          },
+          {
+            "name": "PM SR",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "CALCULATE([Supplier Reliability %],",
+              "PREVIOUSMONTH('Date'[Dates])",
+              ")"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "e5300079-71aa-4199-83dd-7ea94bfa979e"
+          },
+          {
+            "name": "Detail SR%",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "VAR Diff = [Supplier Reliability %] - [PM SR]",
+              "VAR Symbol = IF(Diff>0, \" ▲\", \" ▼\")",
+              "VAR Result = FORMAT(ABS(Diff), \"0.#%\") & Symbol",
+              "RETURN",
+              "    Result"
+            ],
+            "lineageTag": "68efc89a-34a2-4ac0-b9fc-0e05017614e7"
+          },
+          {
+            "name": "Previous Month Cost Saving",
+            "displayFolder": "Procurement",
+            "expression": [
+              "",
+              "CALCULATE([Cost Savings], DATEADD('Date'[Dates], -1, MONTH))"
+            ],
+            "formatString": "0",
+            "lineageTag": "91462f64-d449-41f4-ab43-005a97304e1f"
+          },
+          {
+            "name": "Low Stock",
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "    var _stockCount= COUNTROWS(FILTER(Inventory, Inventory[Status]=\"Low Stock\"))",
+              "",
+              "    RETURN",
+              "        if(ISBLANK(_stockCount),\"0\", _stockCount)"
+            ],
+            "formatString": "0",
+            "lineageTag": "fde8793b-ee5b-4606-ba9b-2e962f7947d7"
+          },
+          {
+            "name": "In Stock",
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "Var _inStock = COUNT(Inventory[Product ID])",
+              "",
+              "RETURN",
+              "    if(ISBLANK(_inStock),\"0\", _inStock)"
+            ],
+            "formatString": "0",
+            "lineageTag": "ec973f52-58b7-4569-af8d-20a8fc6373f1"
+          },
+          {
+            "name": "Low Stock %",
+            "displayFolder": "Inventory",
+            "expression": [
+              "",
+              "  var _lowPercent =  DIVIDE([Low Stock],[In Stock],0)",
+              "",
+              "  RETURN",
+              "    if(ISBLANK(_lowPercent), \"0\", _lowPercent)",
+              ""
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "2cf47324-e6d5-4e5f-a708-febcc16d1c29"
+          },
+          {
+            "name": "COGS Target",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Inventory",
+            "expression": "[COGS]*1.25",
+            "lineageTag": "7fa158ac-6f74-4e20-9040-acae3fbd6c05"
+>>>>>>> Stashed changes
           }
         ],
         "partitions": [
@@ -18516,6 +21512,189 @@
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
                 "in",
                 "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Dates",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isKey": true,
+            "lineageTag": "9967ba5f-bb08-4db2-af16-6e48fcb9e1f3",
+            "sourceColumn": "Dates",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0ce6d50f-f772-4698-99fb-dfe6f3e1cd58",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2ca4eb66-0341-4107-9362-a17ef63f2d9b",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3791c03a-68cb-45e5-96fa-8f3d527d0a62",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week of Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2e735cdb-bacd-43d4-ad23-767fca6f44bf",
+            "sourceColumn": "Week of Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "497568ea-46b5-4c37-99e9-44d15e47cee2",
+            "sortByColumn": "Month",
+            "sourceColumn": "Month Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3eb8e294-31ab-42d2-9ab8-e3fc22e557a8",
+            "sourceColumn": "Quarter Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cdf0864c-bde2-477c-a3c9-10d3a2bae74f",
+            "sourceColumn": "Week Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Start of Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "e48071c7-5701-4dda-9c6d-e01f6c5b0863",
+            "sourceColumn": "Start of Month",
+            "summarizeBy": "none"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "3398193c-9d22-4876-97e5-eac0994b1cda",
+        "partitions": [
+          {
+            "name": "Date",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Duration = Duration.Days(EndDate-StartDate)+1,",
+                "    #\"List of date\" = List.Dates(StartDate, Duration, #duration(1,0,0,0)),",
+                "    #\"Converted to Table\" = Table.FromList(#\"List of date\", Splitter.SplitByNothing(), null, null, ExtraValues.Error),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Converted to Table\",{{\"Column1\", \"Dates\"}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"Dates\", type date}}),",
+                "    #\"Inserted Year\" = Table.AddColumn(#\"Changed Type\", \"Year\", each Date.Year([Dates]), Int64.Type),",
+                "    #\"Inserted Month\" = Table.AddColumn(#\"Inserted Year\", \"Month\", each Date.Month([Dates]), Int64.Type),",
+                "    #\"Inserted Quarter\" = Table.AddColumn(#\"Inserted Month\", \"Quarter\", each Date.QuarterOfYear([Dates]), Int64.Type),",
+                "    #\"Inserted Week of Year\" = Table.AddColumn(#\"Inserted Quarter\", \"Week of Year\", each Date.WeekOfYear([Dates]), Int64.Type),",
+                "    #\"Inserted Month Name\" = Table.AddColumn(#\"Inserted Week of Year\", \"Month Name\", each Date.MonthName([Dates]), type text),",
+                "    #\"Extracted First Characters\" = Table.TransformColumns(#\"Inserted Month Name\", {{\"Month Name\", each Text.Start(_, 3), type text}}),",
+                "    #\"Added Quarter Name\" = Table.AddColumn(#\"Extracted First Characters\", \"Quarter Name\", each \"Q\"& Text.From([Quarter])),",
+                "    #\"Added Week Name\" = Table.AddColumn(#\"Added Quarter Name\", \"Week Name\", each \"W\"& Text.From([Week of Year])),",
+                "    #\"Inserted Start of Month\" = Table.AddColumn(#\"Added Week Name\", \"Start of Month\", each Date.StartOfMonth([Dates]), type date)",
+                "in",
+                "    #\"Inserted Start of Month\""
               ],
               "type": "m"
             }
